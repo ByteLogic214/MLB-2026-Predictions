@@ -1,9 +1,9 @@
 
-name: MLB 2026 Daily Predictions
+name: MLB 2026 Hourly Predictions (12PM-10PM)
 
 on:
   schedule:
-    - cron: '0 6 * * *'
+    - cron: '0 12-22 * * *'
   workflow_dispatch:
 
 jobs:
@@ -35,5 +35,5 @@ jobs:
           git config --local user.email "actions@github.com"
           git config --local user.name "GitHub Action"
           git add predicciones_mlb_2026.csv
-          git commit -m "Actualización diaria segura" || echo "No hay cambios"
+          git commit -m "Actualización horaria programada" || echo "No hay cambios"
           git push
