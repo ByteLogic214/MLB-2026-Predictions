@@ -25,3 +25,9 @@ class ModeloPredictivo:
 
     def predecir(self, X):
         return self.modelo.predict(X)
+
+    def merge_external_data(self, main_df, external_csv):
+        if os.path.exists(external_csv):
+            ext_df = pd.read_csv(external_csv)
+            return pd.merge(main_df, ext_df, on='team', how='left')
+        return main_df
