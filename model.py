@@ -1,33 +1,26 @@
 import pandas as pd
-import numpy as np
-from sklearn.ensemble import RandomForestClassifier
-import joblib
 import os
+import logging
+from sklearn.ensemble import RandomForestClassifier
 
 class ModeloPredictivo:
-    def __init__(self, model_path='modelo_mlb.joblib'):
-        self.model_path = model_path
-        self.modelo = RandomForestClassifier(n_estimators=100)
+    def __init__(self):
+        self.modelo = RandomForestClassifier(n_estimators=100, random_state=42)
+        self.base_path = 'MLB-2026-Predictions/'
 
-    def reentrenar_con_datos_recientes(self, csv_path='datos_entrenamiento_mlb.csv'):
-        """Descarga/Carga datos y actualiza el modelo"""
+    def reentrenar(self):
+        ruta = os.path.join(self.base_path, 'datos_entrenamiento_mlb.csv')
+        if not os.path.exists(ruta):
+            logging.error('Archivo de entrenamiento no encontrado.')
+            return False
         try:
-            if not os.path.exists(csv_path): return False
-            df = pd.read_csv(csv_path)
-            X = df.drop('target', axis=1)
-            y = df['target']
+            df = pd.read_csv(ruta)
+            # Selección inteligente de columnas numéricas
+            X = df.select_dtypes(include=['number']).drop(columns=['class'], errors='ignore')
+            y = df['class']
             self.modelo.fit(X, y)
-            joblib.dump(self.modelo, self.model_path)
+            logging.info('Modelo reentrenado exitosamente.')
             return True
         except Exception as e:
-            print(f'Error en reentrenamiento: {e}')
+            logging.error(f'Error en reentrenamiento: {e}')
             return False
-
-    def predecir(self, X):
-        return self.modelo.predict(X)
-
-    def merge_external_data(self, main_df, external_csv):
-        if os.path.exists(external_csv):
-            ext_df = pd.read_csv(external_csv)
-            return pd.merge(main_df, ext_df, on='team', how='left')
-        return main_df
