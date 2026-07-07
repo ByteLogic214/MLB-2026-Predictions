@@ -1,7 +1,7 @@
 import hashlib
 import os
 import logging
-from datetime import datetime, timedelta
+from datetime import datetime
 
 logger = logging.getLogger(__name__)
 
@@ -35,19 +35,13 @@ class DedupManager:
                 line = line.strip()
                 if not line:
                     continue
-                # Formato nuevo: "YYYY-MM-DD|hash"
+                # Formato: "YYYY-MM-DD|hash"
                 if '|' in line:
                     date_part, hash_part = line.split('|', 1)
                     if date_part == self.today:
                         cleaned.add(hash_part)
-                else:
-                    # Formato legacy: conservar solo si es reciente
-                    # (por compatibilidad, lo eliminamos al limpiar)
-                    pass
 
             self.sent_hashes = cleaned
-
-            # Reescribir el archivo limpio solo con hoy
             self._save()
 
             logger.info(
@@ -70,10 +64,7 @@ class DedupManager:
             logger.error(f'❌ Error guardando dedup log: {e}')
 
     def generate_hash(self, *parts):
-        """
-        Genera un hash único a partir de los elementos dados.
-        Ejemplo: generate_hash(home, away, time, market)
-        """
+        """Genera un hash único a partir de los elementos dados."""
         raw = '_'.join(str(p) for p in parts)
         return hashlib.md5(raw.encode()).hexdigest()
 
@@ -87,7 +78,7 @@ class DedupManager:
         self._save()
 
     def cleanup_old_days(self):
-        """Elimina registros de días anteriores del archivo."""
+        """Elimina registros de días anteriores."""
         if not os.path.exists(self.log_file):
             return
 
@@ -95,13 +86,7 @@ class DedupManager:
             with open(self.log_file, 'r') as f:
                 lines = f.read().strip().splitlines()
 
-            today_lines = []
-            for line in lines:
-                line = line.strip()
-                if '|' in line:
-                    date_part, _ = line.split('|', 1)
-                    if date_part == self.today:
-                        today_lines.append(line)
+            today_lines = [l for l in lines if l.startswith(f'{self.today}|')]
 
             with open(self.log_file, 'w') as f:
                 for line in today_lines:
@@ -109,9 +94,7 @@ class DedupManager:
 
             removed = len(lines) - len(today_lines)
             if removed > 0:
-                logger.info(
-                    f'🧹 Limpieza: {removed} registros antiguos eliminados'
-                )
+                logger.info(f'🧹 {removed} registros antiguos eliminados')
 
         except Exception as e:
             logger.error(f'❌ Error en limpieza: {e}')
