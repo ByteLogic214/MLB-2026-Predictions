@@ -1,9 +1,10 @@
 
-name: MLB 2026 Hourly Predictions (12PM-10PM)
+name: MLB 2026 Hourly Predictions (Mexico Central Time)
 
 on:
   schedule:
-    - cron: '0 12-22 * * *'
+    # 18-23 covers 12pm-5pm CST. 0-4 covers 6pm-10pm CST next day UTC.
+    - cron: '0 0-4,18-23 * * *'
   workflow_dispatch:
 
 jobs:
@@ -35,5 +36,5 @@ jobs:
           git config --local user.email "actions@github.com"
           git config --local user.name "GitHub Action"
           git add predicciones_mlb_2026.csv
-          git commit -m "Actualización horaria programada" || echo "No hay cambios"
+          git commit -m "Actualización horaria programada (MX Time)" || echo "No hay cambios"
           git push
