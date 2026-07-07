@@ -1,0 +1,35 @@
+
+name: MLB 2026 Daily Predictions
+
+on:
+  schedule:
+    - cron: '0 6 * * *'
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repositorio
+        uses: actions/checkout@v3
+
+      - name: Configurar Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.9'
+
+      - name: Instalar dependencias
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Ejecutar predicciones
+        run: python predecir.py
+
+      - name: Commit y Push de resultados
+        run: |
+          git config --local user.email "actions@github.com"
+          git config --local user.name "GitHub Action"
+          git add predicciones_mlb_2026.csv
+          git commit -m "Actualización diaria de predicciones MLB 2026" || echo "No hay cambios"
+          git push
