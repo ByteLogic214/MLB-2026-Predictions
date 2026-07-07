@@ -1,26 +1,28 @@
 import pandas as pd
 import os
-import logging
-from sklearn.ensemble import RandomForestClassifier
+from sklearn.ensemble import RandomForestRegressor, RandomForestClassifier
 
-class ModeloPredictivo:
+class MLBQuantModel:
     def __init__(self):
-        self.modelo = RandomForestClassifier(n_estimators=100, random_state=42)
-        self.base_path = 'MLB-2026-Predictions/'
+        # Modelo para ganador
+        self.clf = RandomForestClassifier(n_estimators=100)
+        # Modelo para total de carreras (Regresión)
+        self.reg = RandomForestRegressor(n_estimators=100)
 
-    def reentrenar(self):
-        ruta = os.path.join(self.base_path, 'datos_entrenamiento_mlb.csv')
-        if not os.path.exists(ruta):
-            logging.error('Archivo de entrenamiento no encontrado.')
-            return False
-        try:
-            df = pd.read_csv(ruta)
-            # Selección inteligente de columnas numéricas
-            X = df.select_dtypes(include=['number']).drop(columns=['class'], errors='ignore')
-            y = df['class']
-            self.modelo.fit(X, y)
-            logging.info('Modelo reentrenado exitosamente.')
-            return True
-        except Exception as e:
-            logging.error(f'Error en reentrenamiento: {e}')
-            return False
+    def entrenar_con_contexto(self, data_path):
+        if not os.path.exists(data_path): return
+        df = pd.read_csv(data_path)
+        
+        # Lógica para Ganador
+        X = df[['team_era', 'opp_era', 'venue_factor', 'avg_runs_last_10']]
+        y_winner = df['winner_label']
+        self.clf.fit(X, y_winner)
+        
+        # Lógica para Totales
+        y_total = df['total_runs']
+        self.reg.fit(X, y_total)
+
+    def predecir_todo(self, features):
+        prob_win = self.clf.predict_proba(features)[0][1]
+        pred_runs = self.reg.predict(features)[0]
+        return prob_win, pred_runs
