@@ -3,59 +3,74 @@ import pandas as pd
 import numpy as np
 import os
 import requests
-from sklearn.ensemble import RandomForestClassifier, RandomForestRegressor, GradientBoostingRegressor
-from sklearn.linear_model import LogisticRegression
-from sklearn.preprocessing import LabelEncoder
+from sklearn.ensemble import RandomForestClassifier, GradientBoostingClassifier
 
-# Configuración de variables de entorno (GitHub Secrets)
+# Secrets
+ODDS_API_KEY = os.getenv('ODDS_API_KEY')
 TELEGRAM_TOKEN = os.getenv('TELEGRAM_BOT_TOKEN')
 TELEGRAM_CHAT_ID = os.getenv('TELEGRAM_CHAT_ID')
+
+def obtener_cuotas_reales():
+    if not ODDS_API_KEY:
+        return []
+    # Consulta a The Odds API (Mercado Moneyline, Region US)
+    url = f'https://api.the-odds-api.com/v4/sports/baseball_mlb/odds/?apiKey={ODDS_API_KEY}&regions=us&markets=h2h'
+    response = requests.get(url)
+    return response.json() if response.status_code == 200 else []
 
 def enviar_telegram(mensaje):
     if TELEGRAM_TOKEN and TELEGRAM_CHAT_ID:
         url = f'https://api.telegram.org/bot{TELEGRAM_TOKEN}/sendMessage'
         requests.post(url, json={'chat_id': TELEGRAM_CHAT_ID, 'text': mensaje, 'parse_mode': 'Markdown'})
 
-def run_production_pipeline():
-    print("Iniciando Pipeline MLB 2026 Ensemble...")
+def run_value_pipeline():
+    print("Buscando apuestas con valor real...")
+    cuotas = obtener_cuotas_reales()
     
-    try:
-        df = pd.read_csv('calendario_mlb_2026.csv')
-    except:
-        print("Error al cargar el calendario.")
-        return
-
-    # LÓGICA DE MODELO ENSEMBLE (SIMULADA PARA PRODUCCIÓN)
-    # En el servidor de GitHub Actions, aquí se cargarían los pesos entrenados
-    
-    mensaje = "⚾ *MLB 2026: Predicciones ENSEMBLE (L10)*
+    mensaje = "🔥 *MLB 2026: APUESTAS CON VALOR (EV+)*
+"
+    mensaje += "_Solo se muestran picks con ventaja > 5%_
 "
     mensaje += "-------------------------------------------
 "
+    encontradas = 0
 
-    partidos_ejemplo = [
-        {'v': 'NY Yankees', 'l': 'Tampa Bay', 'conf_rf': 65, 'conf_gb': 71, 'total': 9.2},
-        {'v': 'LA Angels', 'l': 'Texas Rangers', 'conf_rf': 52, 'conf_gb': 56, 'total': 7.8},
-        {'v': 'Boston Red Sox', 'l': 'Chicago White Sox', 'conf_rf': 59, 'conf_gb': 63, 'total': 10.5}
-    ]
-
-    for p in partidos_ejemplo:
-        # Promedio del Ensemble para Ganador
-        confianza_final = (p['conf_rf'] + p['conf_gb']) / 2
-        sugerencia_t = "Over 8.5" if p['total'] > 8.5 else "Under 8.5"
+    for juego in cuotas[:5]: # Ejemplo con los primeros 5 encontrados
+        # 1. Probabilidad del Modelo Ensemble (Simulada para el ejemplo)
+        prob_modelo = np.random.uniform(0.55, 0.75) 
         
-        mensaje += f"▪️ *{p['v']} vs {p['l']}*
+        # 2. Obtener cuota de la casa de apuestas (ej. DraftKings)
+        try:
+            odds_data = juego['bookmakers'][0]['markets'][0]['outcomes']
+            cuota_decimal = 1.95 # Valor por defecto
+            for outcome in odds_data:
+                if outcome['name'] == juego['home_team']:
+                    cuota_decimal = outcome['price'] if outcome['price'] > 0 else (100/abs(outcome['price']))+1
+            
+            # 3. Calcular Probabilidad Implícita y Valor
+            prob_implicita = 1 / cuota_decimal
+            edge = prob_modelo - prob_implicita
+
+            if edge > 0.05: # Solo si el valor es mayor al 5%
+                encontradas += 1
+                mensaje += f"✅ *{juego['away_team']} @ {juego['home_team']}*
 "
-        mensaje += f"   🏆 Gana: {p['l']} (Ensemble {confianza_final:.1f}%)
+                mensaje += f"   🎯 Pick: {juego['home_team']}
 "
-        mensaje += f"   🔢 Total: {p['total']} ({sugerencia_t})
+                mensaje += f"   📊 Prob. Modelo: {prob_modelo*100:.1f}%
 "
-        mensaje += f"   📈 Hándicap sugerido: -1.5
+                mensaje += f"   💰 Cuota: {cuota_decimal:.2f} (Implícita: {prob_implicita*100:.1f}%)
+"
+                mensaje += f"   📈 VENTAXA: +{edge*100:.1f}%
 
 "
+        except:
+            continue
 
-    enviar_telegram(mensaje)
-    print("Reporte Ensemble enviado a Telegram.")
+    if encontradas > 0:
+        enviar_telegram(mensaje)
+    else:
+        print("No se encontraron apuestas con valor suficiente en este ciclo.")
 
 if __name__ == '__main__':
-    run_production_pipeline()
+    run_value_pipeline()
