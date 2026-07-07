@@ -24,6 +24,10 @@ jobs:
           pip install -r requirements.txt
 
       - name: Ejecutar predicciones
+        env:
+          ODDS_API_KEY: ${{ secrets.ODDS_API_KEY }}
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
         run: python predecir.py
 
       - name: Commit y Push de resultados
@@ -31,5 +35,5 @@ jobs:
           git config --local user.email "actions@github.com"
           git config --local user.name "GitHub Action"
           git add predicciones_mlb_2026.csv
-          git commit -m "Actualización diaria de predicciones MLB 2026" || echo "No hay cambios"
+          git commit -m "Actualización diaria segura" || echo "No hay cambios"
           git push
