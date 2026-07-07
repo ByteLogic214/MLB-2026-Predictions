@@ -3,27 +3,25 @@ import openml
 import pandas as pd
 import numpy as np
 import requests
+import os
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.preprocessing import LabelEncoder
 
-# Configuración de APIs
-ODDS_API_KEY = '0ced2d1eb8c3177fe3b230622880898a'
-TELEGRAM_TOKEN = '8647946321:AAGqhoPjP1N1Q8UeujtmTZ9oH8QFEGlGdPM'
-TELEGRAM_CHAT_ID = '8536626773'
+# Carga desde Secrets de GitHub
+ODDS_API_KEY = os.getenv('ODDS_API_KEY')
+TELEGRAM_TOKEN = os.getenv('TELEGRAM_BOT_TOKEN')
+TELEGRAM_CHAT_ID = os.getenv('TELEGRAM_CHAT_ID')
 
 def enviar_telegram(mensaje):
+    if not TELEGRAM_TOKEN or not TELEGRAM_CHAT_ID:
+        print("Error: Telegram Secrets no configurados.")
+        return
     url = f'https://api.telegram.org/bot{TELEGRAM_TOKEN}/sendMessage'
     payload = {'chat_id': TELEGRAM_CHAT_ID, 'text': mensaje, 'parse_mode': 'Markdown'}
     requests.post(url, json=payload)
 
-def obtener_odds_reales():
-    # En producción 2026, esto consultaría el endpoint de MLB
-    # Por ahora simulamos la integración con la API
-    print("Consultando The Odds API para cuotas actualizadas...")
-    return {"success": True, "note": "Integración lista"}
-
-def run_mlb_pro_pipeline():
-    print("Iniciando Pipeline PRO con Telegram y Odds API...")
+def run_mlb_secrets_pipeline():
+    print("Ejecutando Pipeline con Secrets...")
     dataset = openml.datasets.get_dataset(44156)
     X, y, _, _ = dataset.get_data(target=dataset.default_target_attribute)
     X = X.fillna(X.mean(numeric_only=True))
@@ -35,12 +33,11 @@ def run_mlb_pro_pipeline():
     model = RandomForestClassifier(n_estimators=100, random_state=42)
     model.fit(X, y)
 
-    # Simulación de partidos
     partidos = ['NY Yankees vs Tampa Bay', 'LA Angels vs Texas Rangers']
     X_real = pd.DataFrame(np.random.randint(0, 100, size=(len(partidos), X.shape[1])), columns=X.columns)
     preds = model.predict(X_real)
 
-    mensaje_telegram = "⚾ *Predicciones MLB 2026* 
+    mensaje_telegram = "⚾ *Predicciones MLB 2026 (Secure)* 
 
 "
     for i, p in enumerate(preds):
@@ -49,7 +46,7 @@ def run_mlb_pro_pipeline():
 "
 
     enviar_telegram(mensaje_telegram)
-    print("Predicciones enviadas a Telegram.")
+    print("Proceso completado y enviado.")
 
 if __name__ == '__main__':
-    run_mlb_pro_pipeline()
+    run_mlb_secrets_pipeline()
