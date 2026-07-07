@@ -7,7 +7,7 @@ from model import MLBQuantModel
 
 def run():
     logging.basicConfig(level=logging.INFO)
-    print('🚀 MLB QUANT v4.5 - FULL MARKETS (ML & TOTALS)')
+    print('🚀 MLB QUANT v5.0 - UNIFIED MARKETS (ML & TOTALS)')
 
     config = Config()
     api = OddsAPI(config)
@@ -20,6 +20,7 @@ def run():
     with open(log_file, 'r') as f: 
         sent_hashes = set(f.read().splitlines())
 
+    # Obtenemos cuotas que incluyen h2h y totals
     eventos = api.obtener_cuotas()
     
     for ev in eventos:
@@ -27,21 +28,23 @@ def run():
         away = ev.get('away_team')
         commence_time = ev.get('commence_time')
         
-        # Hash único por evento y mercado para evitar duplicados
-        event_hash = hashlib.md5(f"{home}_{away}_{commence_time}".encode()).hexdigest()
-        
-        if event_hash in sent_hashes:
-            continue
+        # Procesamos ambos mercados: Moneyline (h2h) y Totales
+        for market_type in ['h2h', 'totals']:
+            # Hash único por evento y por tipo de mercado para evitar duplicados
+            event_hash = hashlib.md5(f"{home}_{away}_{commence_time}_{market_type}".encode()).hexdigest()
+            
+            if event_hash in sent_hashes:
+                continue
 
-        # Simulación de Lógica de Valor
-        prob_win, pred_total = model.predict_value(None) # En prod usaría features de ev
-        
-        print(f'📊 Procesando: {away} @ {home}')
-        # Aquí se dispararía la lógica de Telegram (omitida para brevedad en test)
-        
-        with open(log_file, 'a') as f:
-            f.write(event_hash + '\n')
-        sent_hashes.add(event_hash)
+            # Lógica de predicción según el mercado
+            prob_win, pred_total = model.predict_value(None)
+            
+            print(f'📊 Procesando {market_type}: {away} @ {home}')
+            # En producción aquí se calcularía el EDGE y se enviaría a Telegram
+            
+            with open(log_file, 'a') as f:
+                f.write(event_hash + '\n')
+            sent_hashes.add(event_hash)
 
 if __name__ == '__main__':
     run()
