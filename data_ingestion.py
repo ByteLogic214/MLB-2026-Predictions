@@ -2,6 +2,7 @@ import pandas as pd
 import requests
 from bs4 import BeautifulSoup
 import os
+import io
 
 class DataIngestor:
     def __init__(self):
@@ -16,8 +17,9 @@ class DataIngestor:
     def fetch_espn_stats(self):
         print('Obteniendo estadísticas de ESPN...')
         try:
-            response = requests.get(self.sources['espn_teams'], headers=self.headers)
-            tables = pd.read_html(response.text)
+            response = requests.get(self.sources['espn_teams'], headers=self.headers, timeout=10)
+            # Usamos StringIO para evitar el FutureWarning y asegurar lectura
+            tables = pd.read_html(io.StringIO(response.text))
             df = tables[0]
             df.to_csv(f'{self.base_path}espn_raw.csv', index=False)
             return df
@@ -28,9 +30,10 @@ class DataIngestor:
     def fetch_baseball_reference(self):
         print('Obteniendo datos de Baseball-Reference...')
         try:
-            response = requests.get(self.sources['baseball_ref'], headers=self.headers)
-            tables = pd.read_html(response.text)
-            # Generalmente la tabla 0 es el resumen de la liga
+            response = requests.get(self.sources['baseball_ref'], headers=self.headers, timeout=10)
+            # Forzar el parseo de tablas mediante BeautifulSoup primero si falla directo
+            soup = BeautifulSoup(response.text, 'html.parser')
+            tables = pd.read_html(io.StringIO(str(soup.find_all('table'))))
             df = tables[0]
             df.to_csv(f'{self.base_path}bref_raw.csv', index=False)
             return df
@@ -40,7 +43,6 @@ class DataIngestor:
 
     def clean_and_process(self, df_list):
         print('Limpiando y unificando datos...')
-        # Unificación básica por equipo para el modelo Random Forest
         if not df_list: return
         consolidated = pd.concat(df_list, axis=0, ignore_index=True).fillna(0)
         consolidated.to_csv(f'{self.base_path}datos_entrenamiento_mlb.csv', index=False)
@@ -51,12 +53,14 @@ class DataIngestor:
         data = []
         data.append(self.fetch_espn_stats())
         data.append(self.fetch_baseball_reference())
-        
+
         valid_data = [d for d in data if not d.empty]
         if valid_data:
             self.clean_and_process(valid_data)
             print('✅ Base de datos actualizada con éxito.')
             return True
+        else:
+            print('⚠️ No se pudo obtener nueva información de las fuentes.')
         return False
 
 if __name__ == "__main__":
