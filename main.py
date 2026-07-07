@@ -1,23 +1,21 @@
-import numpy as np
-import requests
 import sys
 import os
-from groq import Groq
-
-sys.path.append(os.path.dirname(os.path.abspath(__file__)))
+import numpy as np
+import requests
 from config import Config
+from model import ModeloPredictivo
 from api import OddsAPI
+from groq import Groq
 
 def juez_groq(reporte, config: Config):
     key = config.get_groq_api_key()
     if not key: return reporte
     client = Groq(api_key=key)
-    prompt = f"""Eres un experto en apuestas deportivas y analista de MLB. 
-    Revisa el reporte:
+    prompt = f"""Eres un experto en MLB. Revisa este reporte de apuestas:
 
-    {reporte}
+{reporte}
 
-    Responde con el reporte mejorado o 'RECHAZADO'."""
+Mejora el formato y responde con el reporte final o 'RECHAZADO'."""
     try:
         completion = client.chat.completions.create(
             model="llama-3.3-70b-versatile",
@@ -38,11 +36,24 @@ def enviar_telegram(mensaje, config: Config):
 def run():
     print('--- INICIANDO SISTEMA PROFESIONAL ---')
     config = Config()
+    modelo = ModeloPredictivo()
+    
+    # 1. Reentrenamiento
+    if modelo.reentrenar_con_datos_recientes():
+        print('Modelo actualizado.')
+    
+    # 2. Obtener Datos y Predecir (Simulado para validación)
     reporte_simulado = "✅ Yankees vs Red Sox | Pick: Yankees | Prob: 68%"
+    
+    # 3. Validación con Juez Groq
+    print('Consultando al Juez Groq...')
     reporte_final = juez_groq(reporte_simulado, config)
+    
     if reporte_final:
-        print('Reporte validado y listo para envio.')
+        print('Reporte validado y enviado.')
         enviar_telegram(reporte_final, config)
+    else:
+        print('Reporte rechazado por el Juez.')
 
 if __name__ == '__main__':
     run()
