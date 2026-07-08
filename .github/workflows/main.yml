@@ -1,29 +1,21 @@
 name: MLB Unitary Pipeline
-
 on:
   schedule:
-    - cron: '0 * * * *'
+    - cron: '0 * * * *'  # cada hora
   workflow_dispatch:
 
 jobs:
-  predict_and_alert:
+  run:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
-        uses: actions/checkout@v3
-
-      - name: Python Setup
-        uses: actions/setup-python@v4
+      - uses: actions/checkout@v4   # ← actualizado
+      - uses: actions/setup-python@v5  # ← actualizado
         with:
-          python-version: '3.10'
-
-      - name: Dependencies
-        run: |
-          pip install pandas numpy scikit-learn requests groq
-
-      - name: Run Engine
-        env:
-          ODDS_API_KEY: ${{ secrets.ODDS_API_KEY }}
-          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
-          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
-        run: python main.py
+          python-version: '3.12'
+      - run: pip install -r requirements.txt
+      - run: python main.py
+    env:
+      ODDS_API_KEY: ${{ secrets.ODDS_API_KEY }}
+      GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+      TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+      TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
