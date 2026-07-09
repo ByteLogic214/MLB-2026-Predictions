@@ -209,3 +209,82 @@ if __name__ == "__main__":
     import sys
     date = sys.argv[1] if len(sys.argv) > 1 else datetime.now().strftime('%Y-%m-%d')
     run_prediction_flow(date)
+
+
+def send_predictions_to_telegram(df_results: pd.DataFrame, date_str: str):
+    """
+    Envía las predicciones del día a Telegram.
+    Solo envía picks confiados. Si no hay picks, manda resumen igual.
+    """
+    import os
+    token = os.getenv('TELEGRAM_BOT_TOKEN')
+    chat_id = os.getenv('TELEGRAM_CHAT_ID')
+
+    if not token or not chat_id:
+        logger.warning("⚠️ TELEGRAM_BOT_TOKEN o TELEGRAM_CHAT_ID no configurados. Saltando notificación.")
+        return
+
+    import requests
+
+    if df_results.empty:
+        mensaje = f"⚾ *MLB Predicciones {date_str}*\n\nNo hay juegos programados para hoy."
+    else:
+        confident = df_results[df_results['confident_pick'] == True] if 'confident_pick' in df_results.columns else pd.DataFrame()
+
+        lineas = [f"⚾ *MLB Predicciones — {date_str}*", ""]
+
+        if not confident.empty:
+            lineas.append(f"🎯 *{len(confident)} PICKS CONFIADOS:*")
+            for _, row in confident.iterrows():
+                conf_pct = f"{row['prediction_confidence']:.0%}" if 'prediction_confidence' in row else ""
+                lineas.append(f"• {row['away_team']} @ {row['home_team']}")
+                lineas.append(f"  → 🏆 *{row['predicted_winner']}* {conf_pct}")
+                lineas.append("")
+        else:
+            lineas.append("ℹ️ Hoy no hay picks con alta confianza.")
+            lineas.append("(Los 3 modelos no coinciden suficientemente)")
+            lineas.append("")
+
+        lineas.append(f"📋 *Todos los juegos ({len(df_results)}):*")
+        for _, row in df_results.iterrows():
+            prob = row.get('win_probability', 0.5)
+            winner = row.get('predicted_winner', '?')
+            lineas.append(f"• {row['away_team']} @ {row['home_team']} → {winner} ({prob:.0%})")
+
+        mensaje = "\n".join(lineas)
+
+    try:
+        url = f"https://api.telegram.org/bot{token}/sendMessage"
+        r = requests.post(url, json={
+            'chat_id': chat_id,
+            'text': mensaje,
+            'parse_mode': 'Markdown',
+            'disable_web_page_preview': True
+        }, timeout=15)
+
+        if r.status_code == 200:
+            logger.info("✅ Predicciones enviadas a Telegram")
+        else:
+            logger.error(f"❌ Error Telegram {r.status_code}: {r.text}")
+            # Reintentar sin Markdown
+            r2 = requests.post(url, json={
+                'chat_id': chat_id,
+                'text': mensaje.replace('*','').replace('_',''),
+                'disable_web_page_preview': True
+            }, timeout=15)
+            if r2.status_code == 200:
+                logger.info("✅ Enviado sin formato")
+    except Exception as e:
+        logger.error(f"❌ Excepción Telegram: {e}")
+
+
+# ── Actualizar run_prediction_flow para llamar a Telegram ──────────────
+_original_run = run_prediction_flow
+
+def run_prediction_flow(date_str: str = None) -> pd.DataFrame:
+    df = _original_run(date_str)
+    if date_str is None:
+        from datetime import datetime
+        date_str = datetime.now().strftime('%Y-%m-%d')
+    send_predictions_to_telegram(df, date_str)
+    return df

@@ -1,33 +1,38 @@
-name: MLB 2026 Predictions - Hourly Run
+name: MLB Live Trading Engine
 
 on:
   schedule:
-    # Se ejecuta cada hora en punto (00:00 UTC)
-    - cron: '0 * * * *'
-  workflow_dispatch: # Permitir ejecución manual
+    - cron: '0 15-23 * * *'  # 15-23 UTC = 10am-6pm Mexico City (horas de juegos MLB)
+  workflow_dispatch:
 
 jobs:
   predict:
     runs-on: ubuntu-latest
+    continue-on-error: true
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Set up Python 3.11
+      - name: Set up Python
         uses: actions/setup-python@v4
         with:
-          python-version: '3.11'
+          python-version: '3.12'
 
       - name: Install dependencies
         run: |
           pip install -r requirements.txt
+          pip install MLB-StatsAPI
 
-      - name: Run prediction engine
+      - name: Create required directories
+        run: mkdir -p src/logs data/raw data/processed
+
+      - name: Run trading engine (scan mode)
         env:
           ODDS_API_KEY: ${{ secrets.ODDS_API_KEY }}
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+          QROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
-          QROQ_API_KEY: ${{ secrets.QROQ_API_KEY }} # <-- Corregido aquí
         working-directory: ./src
         run: |
-          python main.py
+          python main.py --mode scan

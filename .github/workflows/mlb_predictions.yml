@@ -2,15 +2,15 @@ name: MLB 2026 Daily Predictions
 
 on:
   schedule:
-    - cron: '0 10 * * *'  # Se ejecuta todos los días a las 10:00 UTC
-  workflow_dispatch:      # Permite ejecución manual
+    - cron: '0 14 * * *'  # 14:00 UTC = 09:00 Mexico City (hora de juegos)
+  workflow_dispatch:
 
 jobs:
   predict:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Set up Python
         uses: actions/setup-python@v4
@@ -20,19 +20,26 @@ jobs:
       - name: Install dependencies
         run: |
           pip install -r requirements.txt
-          pip install MLB-StatsAPI xgboost joblib pandas requests
+          pip install MLB-StatsAPI
 
-      - name: Run Prediction Pipeline
+      - name: Create required directories
+        run: mkdir -p logs data/raw data/processed
+
+      - name: Run Prediction Pipeline + Telegram
         env:
-          QROQ_API_KEY: ${{ secrets.QROQ_API_KEY }}
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+          QROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          ODDS_API_KEY: ${{ secrets.ODDS_API_KEY }}
+        working-directory: ./src
         run: |
-          # Ejecutamos como módulo para respetar los imports de src/
-          python -c "from src.inference_pipeline import run_prediction_flow; run_prediction_flow()"
+          python inference_pipeline.py
 
       - name: Commit and Push results
         run: |
-          git config --global user.name 'GitHub Action Bot'
-          git config --global user.email 'action@github.com'
-          git add data/processed/predictions_final.csv
-          git commit -m "Update daily predictions [skip ci]" || echo "No changes to commit"
-          git push
+          git config --global user.name 'Cleo AI Bot'
+          git config --global user.email 'cleo-ai@bytelogic214.dev'
+          git add data/processed/predictions_final.csv || true
+          git commit -m "Update daily predictions [skip ci]" || echo "No changes"
+          git push || echo "Push failed (no changes)"
