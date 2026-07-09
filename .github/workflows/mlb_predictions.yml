@@ -1,0 +1,38 @@
+name: MLB 2026 Daily Predictions
+
+on:
+  schedule:
+    - cron: '0 10 * * *'  # Se ejecuta todos los días a las 10:00 UTC
+  workflow_dispatch:      # Permite ejecución manual
+
+jobs:
+  predict:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.12'
+
+      - name: Install dependencies
+        run: |
+          pip install -r requirements.txt
+          pip install MLB-StatsAPI xgboost joblib pandas requests
+
+      - name: Run Prediction Pipeline
+        env:
+          QROQ_API_KEY: ${{ secrets.QROQ_API_KEY }}
+        run: |
+          # Ejecutamos como módulo para respetar los imports de src/
+          python -c "from src.inference_pipeline import run_prediction_flow; run_prediction_flow()"
+
+      - name: Commit and Push results
+        run: |
+          git config --global user.name 'GitHub Action Bot'
+          git config --global user.email 'action@github.com'
+          git add data/processed/predictions_final.csv
+          git commit -m "Update daily predictions [skip ci]" || echo "No changes to commit"
+          git push
