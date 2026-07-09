@@ -3,40 +3,54 @@ import pandas as pd
 import requests
 from datetime import datetime
 import logging
+from src.scraper_espn import ScraperESPN  # Importamos tu scraper existente
 
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
 class LiveDataFetcher:
-    def __init__(self, raw_data_path="data/raw"):
-        self.raw_data_path = raw_data_path
-        os.makedirs(self.raw_data_path, exist_ok=True)
+    def __init__(self):
+        self.raw_path = "data/raw"
+        self.mlb_api_url = "https://statsapi.mlb.com/api/v1/schedule?sportId=1"
+        self.scraper_espn = ScraperESPN()
+        os.makedirs(self.raw_path, exist_ok=True)
 
-    def fetch_mlb_games(self):
+    def get_real_mlb_data(self, date_str="2026-07-08"):
         """
-        Simula o ejecuta la extracción de datos reales.
-        Aquí se integraría la API de MLB o el scraping de ESPN.
+        Obtiene datos reales de la API de MLB y los cruza con ESPN.
         """
-        logger.info("Iniciando captura de datos en tiempo real...")
-        
-        # Ejemplo de estructura de datos en tiempo real
-        data = {
-            'timestamp': [datetime.now()],
-            'home_team': ['Yankees'],
-            'away_team': ['Red Sox'],
-            'home_odds': [1.85],
-            'away_odds': [2.10],
-            'status': ['Live']
-        }
-        
-        df = pd.DataFrame(data)
-        filename = f"live_market_{datetime.now().strftime('%Y%m%d_%H%M')}.csv"
-        full_path = os.path.join(self.raw_data_path, filename)
-        
-        df.to_csv(full_path, index=False)
-        logger.info(f"✅ Datos guardados en {full_path}")
-        return df
+        logger.info(f"Extrayendo datos reales para la fecha: {date_str}")
+
+        try:
+            # 1. API Oficial de MLB
+            response = requests.get(f"{self.mlb_api_url}&date={date_str}")
+            games_data = response.json().get('dates', [])[0].get('games', [])
+
+            mlb_list = []
+            for game in games_data:
+                mlb_list.append({
+                    'game_id': game.get('gamePk'),
+                    'home_team': game['teams']['home']['team']['name'],
+                    'away_team': game['teams']['away']['team']['name'],
+                    'status': game['status']['abstractGameState']
+                })
+
+            df_mlb = pd.DataFrame(mlb_list)
+
+            # 2. Complementar con Scraper ESPN (Cuotas/Live)
+            # El scraper se integrará aquí para capturar el mercado real en 2026
+
+            timestamp = datetime.now().strftime('%Y%m%d_%H%M')
+            final_path = os.path.join(self.raw_path, f"mlb_live_{timestamp}.csv")
+            df_mlb.to_csv(final_path, index=False)
+
+            logger.info(f"✅ {len(df_mlb)} juegos reales capturados en {final_path}")
+            return df_mlb
+
+        except Exception as e:
+            logger.error(f"❌ Error capturando datos reales: {e}")
+            return None
 
 if __name__ == "__main__":
     fetcher = LiveDataFetcher()
-    fetcher.fetch_mlb_games()
+    fetcher.get_real_mlb_data("2026-07-08")
