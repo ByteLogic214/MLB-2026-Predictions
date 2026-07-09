@@ -2,12 +2,13 @@ name: MLB Unitary Pipeline
 
 on:
   schedule:
-    - cron: '0 * * * *'
+    - cron: '0 15-23 * * *'   # 15-23 UTC = 10am-6pm Mexico City
   workflow_dispatch:
 
 jobs:
   run:
     runs-on: ubuntu-latest
+    continue-on-error: false
     steps:
       - uses: actions/checkout@v4
 
@@ -22,11 +23,24 @@ jobs:
         run: |
           pip install --upgrade pip
           pip install -r requirements.txt
+          pip install MLB-StatsAPI
 
-      - name: Run MLB Predictions
-        run: python main.py
+      - name: Create required directories
+        run: mkdir -p src/logs data/raw data/processed
+
+      - name: Run MLB Predictions + Telegram
+        working-directory: ./src
+        run: python inference_pipeline.py
         env:
+          QROQ_API_KEY: ${{ secrets.QROQ_API_KEY }}
           ODDS_API_KEY: ${{ secrets.ODDS_API_KEY }}
-          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+
+      - name: Save predictions to repo
+        run: |
+          git config --global user.name 'Cleo AI Bot'
+          git config --global user.email 'cleo-ai@bytelogic214.dev'
+          git add data/processed/predictions_final.csv || true
+          git commit -m "Predictions update [skip ci]" || echo "No changes"
+          git push || echo "Nothing to push"

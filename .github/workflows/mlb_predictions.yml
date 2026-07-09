@@ -1,44 +1,22 @@
+# DESACTIVADO: Usa main.yml en su lugar
 name: MLB 2026 Daily Predictions
-
 on:
-  schedule:
-    - cron: '0 14 * * *'  # 14:00 UTC = 09:00 Mexico City (hora de juegos)
   workflow_dispatch:
 
 jobs:
   predict:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
-
-      - name: Set up Python
-        uses: actions/setup-python@v4
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v4
         with:
           python-version: '3.12'
-
-      - name: Install dependencies
-        run: |
-          pip install -r requirements.txt
-          pip install MLB-StatsAPI
-
-      - name: Create required directories
-        run: mkdir -p logs data/raw data/processed
-
-      - name: Run Prediction Pipeline + Telegram
+      - run: pip install -r requirements.txt && pip install MLB-StatsAPI
+      - name: Run pipeline
+        working-directory: ./src
+        run: python inference_pipeline.py
         env:
           QROQ_API_KEY: ${{ secrets.QROQ_API_KEY }}
+          ODDS_API_KEY: ${{ secrets.ODDS_API_KEY }}
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
-          ODDS_API_KEY: ${{ secrets.ODDS_API_KEY }}
-        working-directory: ./src
-        run: |
-          python inference_pipeline.py
-
-      - name: Commit and Push results
-        run: |
-          git config --global user.name 'Cleo AI Bot'
-          git config --global user.email 'cleo-ai@bytelogic214.dev'
-          git add data/processed/predictions_final.csv || true
-          git commit -m "Update daily predictions [skip ci]" || echo "No changes"
-          git push || echo "Push failed (no changes)"

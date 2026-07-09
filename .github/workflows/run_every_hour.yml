@@ -1,37 +1,22 @@
+# DESACTIVADO: Usa main.yml en su lugar
 name: MLB Live Trading Engine
-
 on:
-  schedule:
-    - cron: '0 15-23 * * *'  # 15-23 UTC = 10am-6pm Mexico City (horas de juegos MLB)
   workflow_dispatch:
 
 jobs:
   predict:
     runs-on: ubuntu-latest
-    continue-on-error: true
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
-
-      - name: Set up Python
-        uses: actions/setup-python@v4
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v4
         with:
           python-version: '3.12'
-
-      - name: Install dependencies
-        run: |
-          pip install -r requirements.txt
-          pip install MLB-StatsAPI
-
-      - name: Create required directories
-        run: mkdir -p src/logs data/raw data/processed
-
-      - name: Run trading engine (scan mode)
+      - run: pip install -r requirements.txt && pip install MLB-StatsAPI
+      - name: Run scan mode
+        working-directory: ./src
+        run: python main.py --mode scan
         env:
-          ODDS_API_KEY: ${{ secrets.ODDS_API_KEY }}
           QROQ_API_KEY: ${{ secrets.QROQ_API_KEY }}
+          ODDS_API_KEY: ${{ secrets.ODDS_API_KEY }}
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
-        working-directory: ./src
-        run: |
-          python main.py --mode scan
