@@ -7,7 +7,7 @@ logger = logging.getLogger(__name__)
 class Config:
     def __init__(self):
         self.ODDS_API_KEY = os.getenv('ODDS_API_KEY')
-        self.GROQ_API_KEY = os.getenv('GROQ_API_KEY') or os.getenv('QROQ_API_KEY')
+        self.GROQ_API_KEY = os.getenv('QROQ_API_KEY') or os.getenv('GROQ_API_KEY')
         self.TELEGRAM_TOKEN = os.getenv('TELEGRAM_BOT_TOKEN')
         self.TELEGRAM_CHAT_ID = os.getenv('TELEGRAM_CHAT_ID')
         self.SENT_LOG_DIR = os.path.join(
