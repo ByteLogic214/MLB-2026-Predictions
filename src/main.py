@@ -24,7 +24,7 @@ from config import Config
 from api import OddsAPI
 from telegram_notifier import TelegramNotifier
 from dedup_manager import DedupManager
-from QROQ_API_KEY import GroqJudge
+from groq_judge import GroqJudge
 
 # Nuevos imports
 try:
@@ -44,6 +44,7 @@ try:
 except ImportError:
     MODEL_AVAILABLE = False
 
+os.makedirs("./logs", exist_ok=True)
 logging.basicConfig(
     level=logging.INFO,
     format='%(asctime)s | %(levelname)s | %(name)s | %(message)s',
@@ -138,7 +139,7 @@ class MLBTradingSystem:
                 self._run_data_pipeline()
 
             # 3. Limpiar logs antiguos
-            self.dedup.cleanup_old_days(days_to_keep=7)
+            self.dedup.cleanup_old_days()
 
             # 4. Ejecutar según modo
             if self.mode == 'live':

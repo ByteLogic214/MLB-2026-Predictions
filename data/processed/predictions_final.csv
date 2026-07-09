@@ -1,14 +1,8 @@
-game_id,home_team,away_team,status,win_probability
-823359,Pittsburgh Pirates,Atlanta Braves,Preview,0.7819734521529849
-823606,New York Mets,Kansas City Royals,Preview,0.8202051529330203
-822954,Tampa Bay Rays,New York Yankees,Preview,0.832279624272498
-824816,Baltimore Orioles,Chicago Cubs,Preview,0.8099093508373081
-823683,Minnesota Twins,Cleveland Guardians,Preview,0.8094679214876449
-824577,Chicago White Sox,Boston Red Sox,Preview,0.8080722233155824
-824251,Detroit Tigers,Athletics,Preview,0.7938994083259854
-823846,Miami Marlins,Seattle Mariners,Preview,0.825165414874385
-824494,Cincinnati Reds,Philadelphia Phillies,Preview,0.8378949911026241
-823034,St. Louis Cardinals,Milwaukee Brewers,Preview,0.8062089641487309
-822877,Texas Rangers,Los Angeles Angels,Preview,0.8157124321053344
-823277,San Diego Padres,Arizona Diamondbacks,Preview,0.8083232306942614
-823201,San Francisco Giants,Colorado Rockies,Preview,0.7843883318725888
+game_id,game_date,home_team,away_team,status,predicted_winner,win_probability,prediction_confidence,confident_pick
+824251,2026-07-09,Detroit Tigers,Athletics,Preview,Athletics,0.4884817030807595,0.5115182969192404,False
+823846,2026-07-09,Miami Marlins,Seattle Mariners,Preview,Seattle Mariners,0.48844799974532815,0.5115520002546718,False
+824494,2026-07-09,Cincinnati Reds,Philadelphia Phillies,Preview,Cincinnati Reds,0.502859320917946,0.502859320917946,False
+823034,2026-07-09,St. Louis Cardinals,Milwaukee Brewers,Preview,St. Louis Cardinals,0.550597560180651,0.550597560180651,False
+822877,2026-07-09,Texas Rangers,Los Angeles Angels,Preview,Los Angeles Angels,0.4822659657033925,0.5177340342966075,False
+823277,2026-07-09,San Diego Padres,Arizona Diamondbacks,Preview,San Diego Padres,0.503520119681128,0.503520119681128,False
+823201,2026-07-09,San Francisco Giants,Colorado Rockies,Preview,San Francisco Giants,0.5511558469831791,0.5511558469831791,False

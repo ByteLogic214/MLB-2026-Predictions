@@ -3,7 +3,7 @@ import pandas as pd
 import requests
 from datetime import datetime
 import logging
-from src.scraper_espn import ScraperESPN  # Importamos tu scraper existente
+from scraper_espn import ESPNScraper  # Importamos tu scraper existente
 
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
@@ -12,7 +12,7 @@ class LiveDataFetcher:
     def __init__(self):
         self.raw_path = "data/raw"
         self.mlb_api_url = "https://statsapi.mlb.com/api/v1/schedule?sportId=1"
-        self.scraper_espn = ScraperESPN()
+        self.scraper_espn = ESPNScraper()
         os.makedirs(self.raw_path, exist_ok=True)
 
     def get_real_mlb_data(self, date_str="2026-07-08"):

@@ -12,3 +12,5 @@ class ScraperESPN:
     def get_odds(self, date_str: str) -> List[Dict]:
         logger.info(f"Consultando cuotas en ESPN para {date_str}...")
         return []
+# Alias para compatibilidad con el resto del sistema
+ESPNScraper = ScraperESPN
