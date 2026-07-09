@@ -24,7 +24,7 @@ from config import Config
 from api import OddsAPI
 from telegram_notifier import TelegramNotifier
 from dedup_manager import DedupManager
-from groq_judge import GroqJudge
+from QROQ_API_KEY import GroqJudge
 
 # Nuevos imports
 try:

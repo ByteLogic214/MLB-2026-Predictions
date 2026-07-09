@@ -1,6 +1,6 @@
 """
 ═══════════════════════════════════════════════════════════════════════════
-groq_judge.py — Validador LLM con Contexto Sabermetrico
+QROQ_API_KEY.py — Validador LLM con Contexto Sabermetrico
 ═══════════════════════════════════════════════════════════════════════════
 Envía diferenciales de ventanas móviles (Delta_xWOBA, Delta_Stuff+, etc.)
 al LLM de Groq para validar si el ensemble subestima rachas calientes.

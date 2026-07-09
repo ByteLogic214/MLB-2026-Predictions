@@ -1,0 +1,3 @@
+# Configuración del Proyecto MLB Predictions
+api_keys:
+  qroq: "QROQ_API_KEY"  # Llamado correcto desde los GitHub Secrets
