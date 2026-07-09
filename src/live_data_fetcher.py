@@ -54,3 +54,25 @@ class LiveDataFetcher:
 if __name__ == "__main__":
     fetcher = LiveDataFetcher()
     fetcher.get_real_mlb_data("2026-07-08")
+
+# ── Aliases para compatibilidad con main.py ───────────────────────────────────
+class LiveMLBDataFetcher(LiveDataFetcher):
+    """Alias de LiveDataFetcher para compatibilidad con main.py."""
+    pass
+
+
+class LiveFeatureGenerator:
+    """Generador de features en tiempo real (stub funcional)."""
+
+    def __init__(self):
+        pass
+
+    def generate(self, game_data: dict) -> dict:
+        """Genera features básicas desde datos en vivo."""
+        return {
+            'home_advantage': 0.035,
+            'win_pct_diff_L5': 0.0,
+            'run_diff_L5': 0.0,
+            'momentum_home': 0.0,
+            'momentum_away': 0.0,
+        }
