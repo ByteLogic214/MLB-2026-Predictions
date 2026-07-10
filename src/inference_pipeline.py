@@ -269,6 +269,14 @@ def run_prediction_flow(date_str: str = None) -> pd.DataFrame:
         to_predict = df_games
     logger.info(f"  {len(to_predict)} juegos a predecir")
 
+    # 1b. Enriquecer con datos en vivo: standings 2026 + probable pitchers
+    try:
+        from live_standings import enrich_with_live_data
+        to_predict = enrich_with_live_data(to_predict, date_str)
+        logger.info("✅ Standings + pitchers del día integrados")
+    except Exception as e:
+        logger.warning(f"⚠️ Live data no disponible: {e}")
+
     # 2. Cargar historial y calcular features
     history_path = os.path.join(_REPO_DIR, 'datos_entrenamiento_mlb.csv')
     if not os.path.exists(history_path):
@@ -281,6 +289,12 @@ def run_prediction_flow(date_str: str = None) -> pd.DataFrame:
         df_with_feats = compute_rolling_features(df_history)
         team_latest   = get_latest_team_stats(df_with_feats)
         df_enriched   = enrich_games(to_predict, team_latest)
+        # Preservar columnas live si ya existen en to_predict
+        live_cols = [c for c in to_predict.columns if 'season_' in c or 'pitcher_era' in c
+                     or 'pitcher_name' in c or 'streak_diff' in c or 'pitcher_era_diff' in c]
+        for col in live_cols:
+            if col in to_predict.columns:
+                df_enriched[col] = to_predict[col].values
 
     # 3. Modelo ensemble (v3 si disponible, v2 como fallback)
     try:

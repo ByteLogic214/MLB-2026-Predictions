@@ -97,6 +97,22 @@ class FeatureEngineer:
             features['home_momentum']         = features.get('home_win_pct_L5',0.5) - features.get('home_win_pct_L25',0.5)
             features['away_momentum']         = features.get('away_win_pct_L5',0.5) - features.get('away_win_pct_L25',0.5)
             features['momentum_diff']         = features['home_momentum'] - features['away_momentum']
+
+            # ── Temporada actual 2026 (standings en vivo) ─────────────────────
+            features['home_season_win_pct']  = row.get('home_season_win_pct', 0.500)
+            features['away_season_win_pct']  = row.get('away_season_win_pct', 0.500)
+            features['season_win_pct_diff']  = row.get('season_win_pct_diff',
+                features['home_season_win_pct'] - features['away_season_win_pct'])
+            features['season_wins_diff']     = row.get('season_wins_diff', 0)
+            features['home_season_streak']   = row.get('home_season_streak', 0)
+            features['away_season_streak']   = row.get('away_season_streak', 0)
+            features['streak_diff']          = row.get('streak_diff', 0)
+
+            # ── Pitcher ERA temporada actual (reemplaza ERA histórica) ─────────
+            features['home_pitcher_era']     = row.get('home_pitcher_era', 4.30)
+            features['away_pitcher_era']     = row.get('away_pitcher_era', 4.30)
+            features['pitcher_era_diff']     = row.get('pitcher_era_diff',
+                features['away_pitcher_era'] - features['home_pitcher_era'])
             features['home_run_diff_momentum'] = features.get('home_run_diff_L5',0) - features.get('home_run_diff_L25',0)
             features['away_run_diff_momentum'] = features.get('away_run_diff_L5',0) - features.get('away_run_diff_L25',0)
 
