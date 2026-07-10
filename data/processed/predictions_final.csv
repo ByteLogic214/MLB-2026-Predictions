@@ -1,3 +1,7 @@
 game_id,game_date,home_team,away_team,status,predicted_winner,win_probability,prediction_confidence,confident_pick
+<<<<<<< Updated upstream
 823277,2026-07-09,San Diego Padres,Arizona Diamondbacks,Preview,San Diego Padres,0.5035201163697588,0.5035201163697588,False
 823201,2026-07-09,San Francisco Giants,Colorado Rockies,Preview,San Francisco Giants,0.5511558403604407,0.5511558403604407,False
+=======
+823201,2026-07-09,San Francisco Giants,Colorado Rockies,Preview,San Francisco Giants,0.5191747549031451,0.5191747549031451,False
+>>>>>>> Stashed changes
