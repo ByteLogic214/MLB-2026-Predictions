@@ -1,11 +1,7 @@
 game_id,game_date,home_team,away_team,status,predicted_winner,win_probability,prediction_confidence,confident_pick
-824252,2026-07-10,Detroit Tigers,Philadelphia Phillies,Preview,Detroit Tigers,0.5410651259180779,0.5410651259180779,False
 823357,2026-07-10,Pittsburgh Pirates,Milwaukee Brewers,Preview,Pittsburgh Pirates,0.564796522183985,0.564796522183985,False
 822709,2026-07-10,Washington Nationals,New York Yankees,Preview,New York Yankees,0.48809097636695664,0.5119090236330434,False
-824817,2026-07-10,Baltimore Orioles,Kansas City Royals,Preview,Baltimore Orioles,0.5573094769216091,0.5573094769216091,False
-824493,2026-07-10,Cincinnati Reds,Chicago Cubs,Preview,Chicago Cubs,0.4479706028869811,0.5520293971130189,False
 822955,2026-07-10,Tampa Bay Rays,Seattle Mariners,Preview,Seattle Mariners,0.47020103745410613,0.5297989625458939,False
-823845,2026-07-10,Miami Marlins,Cleveland Guardians,Preview,Cleveland Guardians,0.46507340931414276,0.5349265906858572,False
 823604,2026-07-10,New York Mets,Boston Red Sox,Preview,Boston Red Sox,0.49853637358487424,0.5014636264151258,False
 824575,2026-07-10,Chicago White Sox,Athletics,Preview,Athletics,0.4411221983629141,0.5588778016370859,False
 822878,2026-07-10,Texas Rangers,Houston Astros,Preview,Houston Astros,0.40967551826455195,0.590324481735448,False
