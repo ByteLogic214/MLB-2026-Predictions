@@ -1,8 +1,3 @@
 game_id,game_date,home_team,away_team,status,predicted_winner,win_probability,prediction_confidence,confident_pick
-824251,2026-07-09,Detroit Tigers,Athletics,Preview,Detroit Tigers,0.5792194137102529,0.5792194137102529,True
-823846,2026-07-09,Miami Marlins,Seattle Mariners,Preview,Seattle Mariners,0.4958046825837228,0.5041953174162772,False
-824494,2026-07-09,Cincinnati Reds,Philadelphia Phillies,Preview,Cincinnati Reds,0.502859320917946,0.502859320917946,False
-823034,2026-07-09,St. Louis Cardinals,Milwaukee Brewers,Preview,Milwaukee Brewers,0.4981294032496179,0.501870596750382,False
-822877,2026-07-09,Texas Rangers,Los Angeles Angels,Preview,Texas Rangers,0.5255908609590741,0.5255908609590741,False
-823277,2026-07-09,San Diego Padres,Arizona Diamondbacks,Preview,San Diego Padres,0.503520119681128,0.503520119681128,False
-823201,2026-07-09,San Francisco Giants,Colorado Rockies,Preview,San Francisco Giants,0.5511558469831791,0.5511558469831791,False
+823277,2026-07-09,San Diego Padres,Arizona Diamondbacks,Preview,San Diego Padres,0.5035201163697588,0.5035201163697588,False
+823201,2026-07-09,San Francisco Giants,Colorado Rockies,Preview,San Francisco Giants,0.5511558403604407,0.5511558403604407,False
