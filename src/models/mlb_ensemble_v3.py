@@ -66,11 +66,21 @@ class FeatureEngineer:
             features = self._compute_team_rolling(home_prev, home, 'home')
             features.update(self._compute_team_rolling(away_prev, away, 'away'))
 
-            # Starter features
-            for col in ['home_starter_era','away_starter_era','home_starter_whip',
-                        'away_starter_whip','home_starter_k9','away_starter_k9',
-                        'home_bullpen_era','away_bullpen_era']:
-                features[col] = row.get(col, np.nan)
+            # Starter features — preferir adj_era (park-adjusted) sobre ERA cruda
+            era_map = {
+                'home_starter_era':  row.get('home_adj_era',  row.get('home_starter_era',  np.nan)),
+                'away_starter_era':  row.get('away_adj_era',  row.get('away_starter_era',  np.nan)),
+                'home_starter_whip': row.get('home_adj_whip', row.get('home_starter_whip', np.nan)),
+                'away_starter_whip': row.get('away_adj_whip', row.get('away_starter_whip', np.nan)),
+                'home_starter_k9':   row.get('home_starter_k9', np.nan),
+                'away_starter_k9':   row.get('away_starter_k9', np.nan),
+                'home_bullpen_era':  row.get('home_adj_bullpen_era', row.get('home_bullpen_era', np.nan)),
+                'away_bullpen_era':  row.get('away_adj_bullpen_era', row.get('away_bullpen_era', np.nan)),
+                'park_factor':       row.get('park_factor', 1.0),
+                'delta_adj_era':     row.get('delta_adj_era', np.nan),
+            }
+            for col, val in era_map.items():
+                features[col] = val
 
             # Sabermetría avanzada
             for col in ['home_xwoba','away_xwoba','home_barrel_pct','away_barrel_pct',
@@ -78,7 +88,7 @@ class FeatureEngineer:
                 features[col] = row.get(col, np.nan)
 
             # Deltas
-            features['delta_era']         = features.get('away_starter_era',4.5) - features.get('home_starter_era',4.5)
+            features['delta_era']         = features.get('delta_adj_era', features.get('away_starter_era',4.5) - features.get('home_starter_era',4.5))
             features['delta_whip']        = features.get('away_starter_whip',1.3) - features.get('home_starter_whip',1.3)
             features['delta_k9']          = features.get('home_starter_k9',8.0) - features.get('away_starter_k9',8.0)
             features['delta_bullpen_era'] = features.get('away_bullpen_era',4.0) - features.get('home_bullpen_era',4.0)

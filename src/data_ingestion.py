@@ -12,6 +12,10 @@ import logging
 import warnings
 from datetime import datetime, timedelta
 
+# Park Factors (importado lazy para evitar circular imports)
+_park_factors_loaded = False
+
+
 warnings.filterwarnings("ignore", category=FutureWarning)
 warnings.filterwarnings("ignore", category=UserWarning)
 
@@ -308,7 +312,25 @@ def build_training_dataset(
     leakage_cols = ['ER', 'IP', 'cum_ER', 'cum_IP', 'prev_ER', 'prev_IP']
     base = base.drop(columns=[c for c in leakage_cols if c in base.columns])
 
-    # 5. Guardar dataset enriquecido
+    # 5. Aplicar Park Factors (parque local ajusta ERA de ambos starters)
+    try:
+        from park_factors import apply_park_adjustment, validate_park_adjustment
+        base = apply_park_adjustment(base, park_column='home_team')
+        validate_park_adjustment(base)
+        logger.info("✅ Park factors integrados al dataset")
+    except Exception as e:
+        logger.warning(f"⚠️ Park factors no aplicados: {e}")
+        # Añadir columnas adj_era manuales si falla
+        if 'home_starter_era' in base.columns:
+            base['home_adj_era']      = base['home_starter_era']
+            base['away_adj_era']      = base['away_starter_era']
+            base['park_factor']       = 1.0
+            base['delta_adj_era']     = base['away_adj_era'] - base['home_adj_era']
+            if 'home_bullpen_era' in base.columns:
+                base['home_adj_bullpen_era'] = base['home_bullpen_era']
+                base['away_adj_bullpen_era'] = base['away_bullpen_era']
+
+    # 6. Guardar dataset enriquecido
     base.to_csv(ENRICHED_FILE, index=False)
     logger.info(f"✅ Dataset enriquecido guardado: {len(base)} juegos → {ENRICHED_FILE}")
     return base
