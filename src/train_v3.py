@@ -58,10 +58,17 @@ def fetch_team_era_from_schedule(seasons=[2023,2024,2025]):
 REPO_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..')
 
 def load_base_games():
-    path = os.path.join(REPO_DIR, 'datos_entrenamiento_mlb.csv')
-    df = pd.read_csv(path)
-    df = df.rename(columns={'game_date':'date','home_score':'home_runs','away_score':'away_runs'})
-    logging.info(f"✅ {len(df)} juegos base cargados")
+    """Carga juegos enriquecidos (con rolling_ERA anti-leakage) vía data_ingestion."""
+    from data_ingestion import build_training_dataset, ENRICHED_FILE
+    import os
+    if os.path.exists(ENRICHED_FILE):
+        df = pd.read_csv(ENRICHED_FILE)
+        df['date'] = pd.to_datetime(df['date'])
+        logging.info(f"✅ {len(df)} juegos desde dataset enriquecido")
+        return df
+    # Fallback: construir ahora
+    logging.info("Construyendo dataset enriquecido...")
+    df = build_training_dataset()
     return df
 
 # ── 3. Enriquecer con ERA real ────────────────────────────────────────────────
@@ -88,7 +95,7 @@ def main():
     # Datos base
     df = load_base_games()
 
-    # ERA real (intentar API, si falla usar defaults)
+    # ERA real: ya integrada en build_training_dataset via rolling_ERA anti-leakage
     team_era = fetch_team_era_from_schedule([2023,2024,2025])
     if not team_era:
         logging.warning("Usando ERA estimada. Para ERA real, verificar acceso a statsapi.")
