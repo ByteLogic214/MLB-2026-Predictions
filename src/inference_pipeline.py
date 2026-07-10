@@ -282,9 +282,17 @@ def run_prediction_flow(date_str: str = None) -> pd.DataFrame:
         team_latest   = get_latest_team_stats(df_with_feats)
         df_enriched   = enrich_games(to_predict, team_latest)
 
-    # 3. Modelo ensemble
-    from ensemble_model import MLBEnsembleModel
-    model = MLBEnsembleModel()
+    # 3. Modelo ensemble (v3 si disponible, v2 como fallback)
+    try:
+        from models.mlb_ensemble_v3 import MLBEnsembleV3
+        model = MLBEnsembleV3(save_dir=os.path.join(_REPO_DIR, 'models'))
+        if not model.load():
+            raise FileNotFoundError("ensemble_v3.joblib no encontrado")
+        logger.info("✅ Usando Ensemble v3 (Poisson+XGB+DT+LR)")
+    except Exception as _e:
+        logger.warning(f"⚠️ v3 no disponible ({_e}), usando v2")
+        from ensemble_model import MLBEnsembleModel
+        model = MLBEnsembleModel()
 
     probs, confident_mask = model.predict_with_confidence(df_enriched, threshold=0.57)
     if not hasattr(confident_mask, '__len__'):
