@@ -1,12 +1,7 @@
 game_id,game_date,home_team,away_team,status,predicted_winner,win_probability,prediction_confidence,confident_pick
 823357,2026-07-10,Pittsburgh Pirates,Milwaukee Brewers,Preview,Pittsburgh Pirates,0.564796522183985,0.564796522183985,False
 822709,2026-07-10,Washington Nationals,New York Yankees,Preview,New York Yankees,0.48809097636695664,0.5119090236330434,False
-822955,2026-07-10,Tampa Bay Rays,Seattle Mariners,Preview,Seattle Mariners,0.47020103745410613,0.5297989625458939,False
-823604,2026-07-10,New York Mets,Boston Red Sox,Preview,Boston Red Sox,0.49853637358487424,0.5014636264151258,False
-824575,2026-07-10,Chicago White Sox,Athletics,Preview,Athletics,0.4411221983629141,0.5588778016370859,False
-822878,2026-07-10,Texas Rangers,Houston Astros,Preview,Houston Astros,0.40967551826455195,0.590324481735448,False
 823685,2026-07-10,Minnesota Twins,Los Angeles Angels,Preview,Los Angeles Angels,0.4608311126398448,0.5391688873601552,False
-823033,2026-07-10,St. Louis Cardinals,Atlanta Braves,Preview,Atlanta Braves,0.46955110614897677,0.5304488938510232,False
 823278,2026-07-10,San Diego Padres,Toronto Blue Jays,Preview,San Diego Padres,0.5208444871658628,0.5208444871658628,False
 823927,2026-07-10,Los Angeles Dodgers,Arizona Diamondbacks,Preview,Arizona Diamondbacks,0.39851852322026476,0.6014814767797352,True
 823200,2026-07-10,San Francisco Giants,Colorado Rockies,Preview,Colorado Rockies,0.4615018277736457,0.5384981722263543,False
