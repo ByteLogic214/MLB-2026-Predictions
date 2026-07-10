@@ -1,0 +1,37 @@
+name: Weekly Retrain v3
+
+on:
+  schedule:
+    - cron: '0 8 * * 1'   # Cada lunes 8am UTC
+  workflow_dispatch:
+
+jobs:
+  train:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install deps
+        run: |
+          pip install -q --upgrade pip
+          pip install -q -r requirements.txt
+          pip install -q MLB-StatsAPI pybaseball
+
+      - name: Train Ensemble v3
+        working-directory: ./src
+        run: python train_v3.py
+        env:
+          QROQ_API_KEY: ${{ secrets.QROQ_API_KEY }}
+          ODDS_API_KEY: ${{ secrets.ODDS_API_KEY }}
+
+      - name: Commit updated model
+        run: |
+          git config --global user.name 'Cleo AI Bot'
+          git config --global user.email 'cleo-ai@bytelogic214.dev'
+          git add models/ensemble_v3.joblib
+          git commit -m "Retrain: ensemble_v3 actualizado [skip ci]" || echo "No changes"
+          git push
