@@ -1,6 +1,4 @@
 game_id,game_date,home_team,away_team,status,predicted_winner,win_probability,prediction_confidence,confident_pick
-824249,2026-07-11,Detroit Tigers,Philadelphia Phillies,Preview,Detroit Tigers,0.5410651259180779,0.5410651259180779,False
-824813,2026-07-11,Baltimore Orioles,Kansas City Royals,Preview,Baltimore Orioles,0.5573094769216091,0.5573094769216091,False
 822875,2026-07-11,Texas Rangers,Houston Astros,Preview,Houston Astros,0.40967551826455195,0.590324481735448,False
 824492,2026-07-11,Cincinnati Reds,Chicago Cubs,Preview,Chicago Cubs,0.4479706028869811,0.5520293971130189,False
 823030,2026-07-11,St. Louis Cardinals,Atlanta Braves,Preview,Atlanta Braves,0.46955110614897677,0.5304488938510232,False
