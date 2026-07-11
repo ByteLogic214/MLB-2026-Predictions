@@ -1,6 +1,3 @@
 game_id,game_date,home_team,away_team,status,predicted_winner,win_probability,prediction_confidence,confident_pick
-822875,2026-07-11,Texas Rangers,Houston Astros,Preview,Houston Astros,0.40967551826455195,0.590324481735448,False
-824492,2026-07-11,Cincinnati Reds,Chicago Cubs,Preview,Chicago Cubs,0.4479706028869811,0.5520293971130189,False
-823030,2026-07-11,St. Louis Cardinals,Atlanta Braves,Preview,Atlanta Braves,0.46955110614897677,0.5304488938510232,False
 823276,2026-07-11,San Diego Padres,Toronto Blue Jays,Preview,San Diego Padres,0.5208444871658628,0.5208444871658628,False
 823926,2026-07-11,Los Angeles Dodgers,Arizona Diamondbacks,Preview,Arizona Diamondbacks,0.39851852322026476,0.6014814767797352,True
