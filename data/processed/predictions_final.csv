@@ -12,5 +12,5 @@ game_id,game_date,home_team,away_team,status,predicted_winner,win_probability,pr
 823029,2026-07-12,St. Louis Cardinals,Atlanta Braves,Final,Atlanta Braves,0.46955110614897677,0.5304488938510232,False
 822876,2026-07-12,Texas Rangers,Houston Astros,Final,Houston Astros,0.40967551826455195,0.590324481735448,False
 823199,2026-07-12,San Francisco Giants,Colorado Rockies,Final,Colorado Rockies,0.4615018277736457,0.5384981722263543,False
-823925,2026-07-12,Los Angeles Dodgers,Arizona Diamondbacks,Live,Arizona Diamondbacks,0.39851852322026476,0.6014814767797352,True
-823274,2026-07-12,San Diego Padres,Toronto Blue Jays,Live,San Diego Padres,0.5208444871658628,0.5208444871658628,False
+823925,2026-07-12,Los Angeles Dodgers,Arizona Diamondbacks,Final,Arizona Diamondbacks,0.39851852322026476,0.6014814767797352,True
+823274,2026-07-12,San Diego Padres,Toronto Blue Jays,Final,San Diego Padres,0.5208444871658628,0.5208444871658628,False
