@@ -1,5 +1,4 @@
 game_id,game_date,home_team,away_team,status,predicted_winner,win_probability,prediction_confidence,confident_pick
-823358,2026-07-12,Pittsburgh Pirates,Milwaukee Brewers,Preview,Pittsburgh Pirates,0.564796522183985,0.564796522183985,False
 824814,2026-07-12,Baltimore Orioles,Kansas City Royals,Preview,Baltimore Orioles,0.5573094769216091,0.5573094769216091,False
 822708,2026-07-12,Washington Nationals,New York Yankees,Preview,New York Yankees,0.48809097636695664,0.5119090236330434,False
 824491,2026-07-12,Cincinnati Reds,Chicago Cubs,Preview,Chicago Cubs,0.4479706028869811,0.5520293971130189,False
