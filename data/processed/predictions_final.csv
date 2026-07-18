@@ -1,5 +1,4 @@
 game_id,game_date,home_team,away_team,status,predicted_winner,win_probability,prediction_confidence,confident_pick
-824414,2026-07-18,Cleveland Guardians,Pittsburgh Pirates,Preview,Pittsburgh Pirates,0.475610043765034,0.524389956234966,False
 824412,2026-07-18,Cleveland Guardians,Pittsburgh Pirates,Preview,Pittsburgh Pirates,0.475610043765034,0.524389956234966,False
 824657,2026-07-18,Chicago Cubs,Minnesota Twins,Preview,Minnesota Twins,0.47006304661788545,0.5299369533821146,False
 823441,2026-07-18,Philadelphia Phillies,New York Mets,Preview,Philadelphia Phillies,0.5612984941345804,0.5612984941345804,False
