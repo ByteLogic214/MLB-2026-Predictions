@@ -1,6 +1,4 @@
 game_id,game_date,home_team,away_team,status,predicted_winner,win_probability,prediction_confidence,confident_pick
-822786,2026-07-19,Toronto Blue Jays,Chicago White Sox,Preview,Chicago White Sox,0.4737949803373369,0.5262050196626631,False
-823523,2026-07-19,New York Yankees,Los Angeles Dodgers,Preview,Los Angeles Dodgers,0.4999446740541088,0.5000553259458912,False
 823521,2026-07-19,New York Yankees,Los Angeles Dodgers,Preview,Los Angeles Dodgers,0.4999446740541088,0.5000553259458912,False
 824739,2026-07-19,Boston Red Sox,Tampa Bay Rays,Preview,Boston Red Sox,0.5154648818389403,0.5154648818389403,False
 823439,2026-07-19,Philadelphia Phillies,New York Mets,Preview,Philadelphia Phillies,0.5612984941345804,0.5612984941345804,False
