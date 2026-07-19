@@ -1,6 +1,2 @@
 game_id,game_date,home_team,away_team,status,predicted_winner,win_probability,prediction_confidence,confident_pick
 823521,2026-07-19,New York Yankees,Los Angeles Dodgers,Preview,Los Angeles Dodgers,0.4999446740541088,0.5000553259458912,False
-824978,2026-07-19,Athletics,Washington Nationals,Preview,Washington Nationals,0.38373508132127065,0.6162649186787293,False
-824007,2026-07-19,Los Angeles Angels,Detroit Tigers,Preview,Los Angeles Angels,0.51947121585677,0.51947121585677,False
-823113,2026-07-19,Seattle Mariners,San Francisco Giants,Preview,Seattle Mariners,0.5007199064146178,0.5007199064146178,False
-825057,2026-07-19,Arizona Diamondbacks,St. Louis Cardinals,Preview,St. Louis Cardinals,0.4378064345865291,0.5621935654134709,False
