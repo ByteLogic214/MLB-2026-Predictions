@@ -1,10 +1,6 @@
 game_id,game_date,home_team,away_team,status,predicted_winner,win_probability,prediction_confidence,confident_pick
 823519,2026-07-22,New York Yankees,Pittsburgh Pirates,Preview,New York Yankees,0.5322011839678786,0.5322011839678786,False
 824732,2026-07-22,Boston Red Sox,Baltimore Orioles,Preview,Boston Red Sox,0.5505665591393225,0.5505665591393225,False
-824327,2026-07-22,Colorado Rockies,Washington Nationals,Preview,Washington Nationals,0.36495512314621825,0.6350448768537817,False
-825055,2026-07-22,Arizona Diamondbacks,Athletics,Preview,Athletics,0.47929252683542767,0.5207074731645723,False
-823110,2026-07-22,Seattle Mariners,Cincinnati Reds,Preview,Seattle Mariners,0.5098821597919115,0.5098821597919115,False
-824004,2026-07-22,Los Angeles Angels,St. Louis Cardinals,Preview,Los Angeles Angels,0.503936030281939,0.503936030281939,False
 824408,2026-07-22,Cleveland Guardians,Minnesota Twins,Preview,Minnesota Twins,0.3999008113365607,0.6000991886634393,False
 823438,2026-07-22,Philadelphia Phillies,Los Angeles Dodgers,Preview,Philadelphia Phillies,0.529249134595962,0.529249134595962,False
 822784,2026-07-22,Toronto Blue Jays,Tampa Bay Rays,Preview,Tampa Bay Rays,0.48142933281170497,0.518570667188295,False
