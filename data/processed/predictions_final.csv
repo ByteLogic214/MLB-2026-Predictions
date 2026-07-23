@@ -1,5 +1,4 @@
 game_id,game_date,home_team,away_team,status,predicted_winner,win_probability,prediction_confidence,confident_pick
-824406,2026-07-23,Cleveland Guardians,Minnesota Twins,Preview,Minnesota Twins,0.3999008113365607,0.6000991886634393,False
 822785,2026-07-23,Toronto Blue Jays,Tampa Bay Rays,Preview,Tampa Bay Rays,0.48142933281170497,0.518570667188295,False
 823042,2026-07-23,St. Louis Cardinals,Arizona Diamondbacks,Preview,Arizona Diamondbacks,0.3722135628671739,0.6277864371328261,False
 824247,2026-07-23,Detroit Tigers,Kansas City Royals,Preview,Detroit Tigers,0.5407487531705535,0.5407487531705535,False
