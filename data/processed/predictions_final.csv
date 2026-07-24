@@ -1,12 +1,4 @@
 game_id,game_date,home_team,away_team,status,predicted_winner,win_probability,prediction_confidence,confident_pick
-824248,2026-07-24,Detroit Tigers,Kansas City Royals,Preview,Detroit Tigers,0.5407487531705535,0.5407487531705535,False
-823352,2026-07-24,Pittsburgh Pirates,Chicago Cubs,Preview,Pittsburgh Pirates,0.5459295341667251,0.5459295341667251,False
-822707,2026-07-24,Washington Nationals,Arizona Diamondbacks,Preview,Arizona Diamondbacks,0.3145512125687665,0.6854487874312335,False
-823434,2026-07-24,Philadelphia Phillies,New York Yankees,Preview,Philadelphia Phillies,0.5450241195782368,0.5450241195782368,False
-824812,2026-07-24,Baltimore Orioles,Atlanta Braves,Preview,Atlanta Braves,0.4903951780653888,0.5096048219346112,False
-823601,2026-07-24,New York Mets,Los Angeles Dodgers,Preview,Los Angeles Dodgers,0.4631824033681651,0.5368175966318349,False
-822952,2026-07-24,Tampa Bay Rays,Cleveland Guardians,Preview,Cleveland Guardians,0.46832139943358253,0.5316786005664175,False
-823843,2026-07-24,Miami Marlins,San Diego Padres,Preview,San Diego Padres,0.4892820571860895,0.5107179428139105,False
 824733,2026-07-24,Boston Red Sox,Toronto Blue Jays,Preview,Boston Red Sox,0.5221511627234094,0.5221511627234094,False
 824573,2026-07-24,Chicago White Sox,Houston Astros,Preview,Houston Astros,0.318722554841387,0.681277445158613,False
 822872,2026-07-24,Texas Rangers,Seattle Mariners,Preview,Seattle Mariners,0.38146896653482576,0.6185310334651742,False
