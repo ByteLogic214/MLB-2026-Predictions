@@ -1,5 +1,4 @@
 game_id,game_date,home_team,away_team,status,predicted_winner,win_probability,prediction_confidence,confident_pick
-824244,2026-07-25,Detroit Tigers,Kansas City Royals,Preview,Detroit Tigers,0.5407487531705535,0.5407487531705535,False
 822704,2026-07-25,Washington Nationals,Arizona Diamondbacks,Preview,Arizona Diamondbacks,0.3145512125687665,0.6854487874312335,False
 823197,2026-07-25,San Francisco Giants,Los Angeles Angels,Preview,Los Angeles Angels,0.4557791604689332,0.5442208395310668,False
 824734,2026-07-25,Boston Red Sox,Toronto Blue Jays,Preview,Boston Red Sox,0.5221511627234094,0.5221511627234094,False
