@@ -1,5 +1,4 @@
 game_id,game_date,home_team,away_team,status,predicted_winner,win_probability,prediction_confidence,confident_pick
-822868,2026-07-27,Texas Rangers,Seattle Mariners,Preview,Seattle Mariners,0.38146896653482576,0.6185310334651742,False
 824245,2026-07-27,Detroit Tigers,Baltimore Orioles,Preview,Detroit Tigers,0.5540634387368737,0.5540634387368737,False
 823353,2026-07-27,Pittsburgh Pirates,Arizona Diamondbacks,Preview,Pittsburgh Pirates,0.5362612105168618,0.5362612105168618,False
 823839,2026-07-27,Miami Marlins,Philadelphia Phillies,Preview,Philadelphia Phillies,0.4259779024291397,0.5740220975708603,False
