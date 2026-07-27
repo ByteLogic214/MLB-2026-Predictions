@@ -1,11 +1,5 @@
 game_id,game_date,home_team,away_team,status,predicted_winner,win_probability,prediction_confidence,confident_pick
-824245,2026-07-27,Detroit Tigers,Baltimore Orioles,Preview,Detroit Tigers,0.5540634387368737,0.5540634387368737,False
-823353,2026-07-27,Pittsburgh Pirates,Arizona Diamondbacks,Preview,Pittsburgh Pirates,0.5362612105168618,0.5362612105168618,False
-823839,2026-07-27,Miami Marlins,Philadelphia Phillies,Preview,Philadelphia Phillies,0.4259779024291397,0.5740220975708603,False
-822705,2026-07-27,Washington Nationals,Toronto Blue Jays,Preview,Toronto Blue Jays,0.3888892757611507,0.6111107242388494,False
 824490,2026-07-27,Cincinnati Reds,Cleveland Guardians,Preview,Cleveland Guardians,0.4399703061847661,0.5600296938152338,False
-823597,2026-07-27,New York Mets,Atlanta Braves,Preview,Atlanta Braves,0.43885281820983085,0.5611471817901692,False
-824570,2026-07-27,Chicago White Sox,New York Yankees,Preview,New York Yankees,0.4286563776164206,0.5713436223835794,False
 823025,2026-07-27,St. Louis Cardinals,Chicago Cubs,Preview,Chicago Cubs,0.40539332027753383,0.5946066797224662,False
 824001,2026-07-27,Los Angeles Angels,Houston Astros,Preview,Houston Astros,0.4416267241686488,0.5583732758313512,False
 824977,2026-07-27,Athletics,Boston Red Sox,Preview,Boston Red Sox,0.408283330104775,0.591716669895225,False
