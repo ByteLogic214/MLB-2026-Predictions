@@ -1,7 +1,4 @@
 game_id,game_date,home_team,away_team,status,predicted_winner,win_probability,prediction_confidence,confident_pick
-822702,2026-07-29,Washington Nationals,Toronto Blue Jays,Preview,Toronto Blue Jays,0.3888892757611507,0.6111107242388494,False
-824242,2026-07-29,Detroit Tigers,Baltimore Orioles,Preview,Detroit Tigers,0.5540634387368737,0.5540634387368737,False
-823596,2026-07-29,New York Mets,Atlanta Braves,Preview,Atlanta Braves,0.43885281820983085,0.5611471817901692,False
 823598,2026-07-29,New York Mets,Atlanta Braves,Preview,Atlanta Braves,0.43885281820983085,0.5611471817901692,False
 823192,2026-07-29,San Francisco Giants,Milwaukee Brewers,Preview,Milwaukee Brewers,0.35618461052749356,0.6438153894725065,False
 823273,2026-07-29,San Diego Padres,Colorado Rockies,Preview,Colorado Rockies,0.44838206282922893,0.551617937170771,False
