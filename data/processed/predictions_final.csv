@@ -1,7 +1,5 @@
 game_id,game_date,home_team,away_team,status,predicted_winner,win_probability,prediction_confidence,confident_pick
 823598,2026-07-29,New York Mets,Atlanta Braves,Preview,Atlanta Braves,0.43885281820983085,0.5611471817901692,False
-823192,2026-07-29,San Francisco Giants,Milwaukee Brewers,Preview,Milwaukee Brewers,0.35618461052749356,0.6438153894725065,False
-823273,2026-07-29,San Diego Padres,Colorado Rockies,Preview,Colorado Rockies,0.44838206282922893,0.551617937170771,False
 822947,2026-07-29,Tampa Bay Rays,Texas Rangers,Preview,Texas Rangers,0.48504386947091166,0.5149561305290884,False
 824487,2026-07-29,Cincinnati Reds,Cleveland Guardians,Preview,Cleveland Guardians,0.4399703061847661,0.5600296938152338,False
 823677,2026-07-29,Minnesota Twins,Kansas City Royals,Preview,Kansas City Royals,0.40523471465077165,0.5947652853492283,False
