@@ -1,7 +1,5 @@
 game_id,game_date,home_team,away_team,status,predicted_winner,win_probability,prediction_confidence,confident_pick
-824488,2026-07-30,Cincinnati Reds,Pittsburgh Pirates,Preview,Cincinnati Reds,0.5307566690089216,0.5307566690089216,False
 823595,2026-07-30,New York Mets,Miami Marlins,Preview,Miami Marlins,0.36624311982300334,0.6337568801769966,False
-824894,2026-07-30,Atlanta Braves,Washington Nationals,Preview,Washington Nationals,0.42031189208483843,0.5796881079151616,False
 824974,2026-07-30,Athletics,Boston Red Sox,Preview,Boston Red Sox,0.408283330104775,0.591716669895225,False
 823271,2026-07-30,San Diego Padres,San Francisco Giants,Preview,San Francisco Giants,0.4805989439539211,0.5194010560460789,False
 823921,2026-07-30,Los Angeles Dodgers,Seattle Mariners,Preview,Seattle Mariners,0.3821921096549454,0.6178078903450546,False
