@@ -1,7 +1,4 @@
 game_id,game_date,home_team,away_team,status,predicted_winner,win_probability,prediction_confidence,confident_pick
-823674,2026-07-30,Minnesota Twins,Kansas City Royals,Preview,Kansas City Royals,0.40523471465077165,0.5947652853492283,False
-824568,2026-07-30,Chicago White Sox,New York Yankees,Preview,New York Yankees,0.4286563776164206,0.5713436223835794,False
-823023,2026-07-30,St. Louis Cardinals,Chicago Cubs,Preview,Chicago Cubs,0.40539332027753383,0.5946066797224662,False
 824488,2026-07-30,Cincinnati Reds,Pittsburgh Pirates,Preview,Cincinnati Reds,0.5307566690089216,0.5307566690089216,False
 823595,2026-07-30,New York Mets,Miami Marlins,Preview,Miami Marlins,0.36624311982300334,0.6337568801769966,False
 824894,2026-07-30,Atlanta Braves,Washington Nationals,Preview,Washington Nationals,0.42031189208483843,0.5796881079151616,False
