@@ -1,10 +1,4 @@
 game_id,game_date,home_team,away_team,status,predicted_winner,win_probability,prediction_confidence,confident_pick
-824809,2026-07-31,Baltimore Orioles,Philadelphia Phillies,Preview,Philadelphia Phillies,0.49354830786616644,0.5064516921338336,False
-822782,2026-07-31,Toronto Blue Jays,St. Louis Cardinals,Preview,St. Louis Cardinals,0.4779735607681937,0.5220264392318064,False
-824407,2026-07-31,Cleveland Guardians,Arizona Diamondbacks,Preview,Arizona Diamondbacks,0.3273563645292848,0.6726436354707153,False
-822945,2026-07-31,Tampa Bay Rays,Chicago White Sox,Preview,Chicago White Sox,0.4918666779120191,0.5081333220879809,False
-823593,2026-07-31,New York Mets,Miami Marlins,Preview,Miami Marlins,0.36624311982300334,0.6337568801769966,False
-824892,2026-07-31,Atlanta Braves,Washington Nationals,Preview,Washington Nationals,0.42031189208483843,0.5796881079151616,False
 824164,2026-07-31,Houston Astros,Texas Rangers,Preview,Texas Rangers,0.47491626238874396,0.525083737611256,False
 824325,2026-07-31,Colorado Rockies,Kansas City Royals,Preview,Kansas City Royals,0.403844490910537,0.596155509089463,False
 823999,2026-07-31,Los Angeles Angels,Milwaukee Brewers,Preview,Milwaukee Brewers,0.4239219514259653,0.5760780485740347,False
