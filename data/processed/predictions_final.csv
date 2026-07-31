@@ -1,5 +1,4 @@
 game_id,game_date,home_team,away_team,status,predicted_winner,win_probability,prediction_confidence,confident_pick
-824651,2026-07-31,Chicago Cubs,New York Yankees,Preview,New York Yankees,0.4873065392832475,0.5126934607167525,False
 824486,2026-07-31,Cincinnati Reds,Pittsburgh Pirates,Preview,Cincinnati Reds,0.5307566690089216,0.5307566690089216,False
 824809,2026-07-31,Baltimore Orioles,Philadelphia Phillies,Preview,Philadelphia Phillies,0.49354830786616644,0.5064516921338336,False
 822782,2026-07-31,Toronto Blue Jays,St. Louis Cardinals,Preview,St. Louis Cardinals,0.4779735607681937,0.5220264392318064,False
