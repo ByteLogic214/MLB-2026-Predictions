@@ -1,7 +1,4 @@
 game_id,game_date,home_team,away_team,status,predicted_winner,win_probability,prediction_confidence,confident_pick
-823109,2026-08-01,Seattle Mariners,Minnesota Twins,Preview,Minnesota Twins,0.4790435461600208,0.5209564538399791,False
-822944,2026-08-01,Tampa Bay Rays,Chicago White Sox,Preview,Chicago White Sox,0.4918666779120191,0.5081333220879809,False
-823594,2026-08-01,New York Mets,Miami Marlins,Preview,Miami Marlins,0.36624311982300334,0.6337568801769966,False
 824485,2026-08-01,Cincinnati Reds,Pittsburgh Pirates,Preview,Cincinnati Reds,0.5307566690089216,0.5307566690089216,False
 824808,2026-08-01,Baltimore Orioles,Philadelphia Phillies,Preview,Philadelphia Phillies,0.49354830786616644,0.5064516921338336,False
 824162,2026-08-01,Houston Astros,Texas Rangers,Preview,Texas Rangers,0.47491626238874396,0.525083737611256,False
