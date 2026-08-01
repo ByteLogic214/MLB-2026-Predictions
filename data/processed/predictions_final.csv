@@ -1,7 +1,4 @@
 game_id,game_date,home_team,away_team,status,predicted_winner,win_probability,prediction_confidence,confident_pick
-824485,2026-08-01,Cincinnati Reds,Pittsburgh Pirates,Preview,Cincinnati Reds,0.5307566690089216,0.5307566690089216,False
-824808,2026-08-01,Baltimore Orioles,Philadelphia Phillies,Preview,Philadelphia Phillies,0.49354830786616644,0.5064516921338336,False
-824162,2026-08-01,Houston Astros,Texas Rangers,Preview,Texas Rangers,0.47491626238874396,0.525083737611256,False
 824405,2026-08-01,Cleveland Guardians,Arizona Diamondbacks,Preview,Arizona Diamondbacks,0.3273563645292848,0.6726436354707153,False
 824890,2026-08-01,Atlanta Braves,Washington Nationals,Preview,Washington Nationals,0.42031189208483843,0.5796881079151616,False
 824649,2026-08-01,Chicago Cubs,New York Yankees,Preview,New York Yankees,0.4873065392832475,0.5126934607167525,False
