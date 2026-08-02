@@ -1,5 +1,2 @@
 game_id,game_date,home_team,away_team,status,predicted_winner,win_probability,prediction_confidence,confident_pick
-824971,2026-08-02,Athletics,Detroit Tigers,Preview,Detroit Tigers,0.4391218780471625,0.5608781219528375,False
-823270,2026-08-02,San Diego Padres,San Francisco Giants,Preview,San Francisco Giants,0.4805989439539211,0.5194010560460789,False
-823107,2026-08-02,Seattle Mariners,Minnesota Twins,Preview,Minnesota Twins,0.4790435461600208,0.5209564538399791,False
 823919,2026-08-02,Los Angeles Dodgers,Boston Red Sox,Preview,Boston Red Sox,0.42823998265495206,0.5717600173450479,False
