@@ -1,6 +1,4 @@
 game_id,game_date,home_team,away_team,status,predicted_winner,win_probability,prediction_confidence,confident_pick
-824323,2026-08-02,Colorado Rockies,Kansas City Royals,Preview,Kansas City Royals,0.403844490910537,0.596155509089463,False
-823996,2026-08-02,Los Angeles Angels,Milwaukee Brewers,Preview,Milwaukee Brewers,0.4239219514259653,0.5760780485740347,False
 824971,2026-08-02,Athletics,Detroit Tigers,Preview,Detroit Tigers,0.4391218780471625,0.5608781219528375,False
 823270,2026-08-02,San Diego Padres,San Francisco Giants,Preview,San Francisco Giants,0.4805989439539211,0.5194010560460789,False
 823107,2026-08-02,Seattle Mariners,Minnesota Twins,Preview,Minnesota Twins,0.4790435461600208,0.5209564538399791,False
