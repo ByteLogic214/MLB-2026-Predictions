@@ -1,6 +1,4 @@
 game_id,game_date,home_team,away_team,status,predicted_winner,win_probability,prediction_confidence,confident_pick
-822866,2026-08-05,Texas Rangers,San Francisco Giants,Preview,San Francisco Giants,0.47950729282860893,0.5204927071713911,False
-824322,2026-08-05,Colorado Rockies,Tampa Bay Rays,Preview,Tampa Bay Rays,0.3894978460638384,0.6105021539361616,False
 824806,2026-08-05,Baltimore Orioles,Los Angeles Angels,Preview,Baltimore Orioles,0.5325073290582194,0.5325073290582194,False
 824402,2026-08-05,Cleveland Guardians,New York Mets,Preview,New York Mets,0.49013011904671766,0.5098698809532823,False
 824482,2026-08-05,Cincinnati Reds,Athletics,Preview,Athletics,0.4768071260736616,0.5231928739263384,False
