@@ -1,6 +1,4 @@
 game_id,game_date,home_team,away_team,status,predicted_winner,win_probability,prediction_confidence,confident_pick
-824158,2026-08-05,Houston Astros,Toronto Blue Jays,Preview,Toronto Blue Jays,0.4921256258808371,0.5078743741191629,False
-824646,2026-08-05,Chicago Cubs,Los Angeles Dodgers,Preview,Los Angeles Dodgers,0.462780226686058,0.537219773313942,False
 822866,2026-08-05,Texas Rangers,San Francisco Giants,Preview,San Francisco Giants,0.47950729282860893,0.5204927071713911,False
 824322,2026-08-05,Colorado Rockies,Tampa Bay Rays,Preview,Tampa Bay Rays,0.3894978460638384,0.6105021539361616,False
 824806,2026-08-05,Baltimore Orioles,Los Angeles Angels,Preview,Baltimore Orioles,0.5325073290582194,0.5325073290582194,False
