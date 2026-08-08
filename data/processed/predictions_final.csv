@@ -1,12 +1,3 @@
 game_id,game_date,home_team,away_team,status,predicted_winner,win_probability,prediction_confidence,confident_pick
-823348,2026-08-08,Pittsburgh Pirates,New York Mets,Preview,Pittsburgh Pirates,0.5560228142240426,0.5560228142240426,False
-822701,2026-08-08,Washington Nationals,Cincinnati Reds,Preview,Cincinnati Reds,0.3452237075004899,0.6547762924995101,False
-824079,2026-08-08,Kansas City Royals,Chicago Cubs,Preview,Chicago Cubs,0.36753995886596735,0.6324600411340326,False
-823752,2026-08-08,Milwaukee Brewers,Minnesota Twins,Preview,Milwaukee Brewers,0.5254223206106923,0.5254223206106923,False
-823267,2026-08-08,San Diego Padres,Houston Astros,Preview,Houston Astros,0.3844438758549036,0.6155561241450964,False
-823188,2026-08-08,San Francisco Giants,Detroit Tigers,Preview,Detroit Tigers,0.4534375991348012,0.5465624008651988,False
-823021,2026-08-08,St. Louis Cardinals,Colorado Rockies,Preview,Colorado Rockies,0.4365015242555266,0.5634984757444734,False
-822864,2026-08-08,Texas Rangers,Baltimore Orioles,Preview,Texas Rangers,0.5050741443330771,0.5050741443330771,False
-824565,2026-08-08,Chicago White Sox,Cleveland Guardians,Preview,Cleveland Guardians,0.3793127438845819,0.6206872561154181,False
 825049,2026-08-08,Arizona Diamondbacks,Los Angeles Dodgers,Preview,Los Angeles Dodgers,0.4274993333580921,0.5725006666419079,False
 823102,2026-08-08,Seattle Mariners,Tampa Bay Rays,Preview,Seattle Mariners,0.5179040012640201,0.5179040012640201,False
