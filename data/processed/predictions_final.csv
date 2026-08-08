@@ -1,5 +1,4 @@
 game_id,game_date,home_team,away_team,status,predicted_winner,win_probability,prediction_confidence,confident_pick
-823426,2026-08-08,Philadelphia Phillies,Toronto Blue Jays,Preview,Philadelphia Phillies,0.5302811286854501,0.5302811286854501,False
 823348,2026-08-08,Pittsburgh Pirates,New York Mets,Preview,Pittsburgh Pirates,0.5560228142240426,0.5560228142240426,False
 822701,2026-08-08,Washington Nationals,Cincinnati Reds,Preview,Cincinnati Reds,0.3452237075004899,0.6547762924995101,False
 824079,2026-08-08,Kansas City Royals,Chicago Cubs,Preview,Chicago Cubs,0.36753995886596735,0.6324600411340326,False
