@@ -1,5 +1,4 @@
 game_id,game_date,home_team,away_team,status,predicted_winner,win_probability,prediction_confidence,confident_pick
-823514,2026-08-08,New York Yankees,Atlanta Braves,Preview,Atlanta Braves,0.47537509591668636,0.5246249040833136,False
 824726,2026-08-08,Boston Red Sox,Athletics,Preview,Boston Red Sox,0.5411727140750917,0.5411727140750917,False
 823834,2026-08-08,Miami Marlins,Los Angeles Angels,Preview,Los Angeles Angels,0.4602138652095042,0.5397861347904958,False
 823426,2026-08-08,Philadelphia Phillies,Toronto Blue Jays,Preview,Philadelphia Phillies,0.5302811286854501,0.5302811286854501,False
