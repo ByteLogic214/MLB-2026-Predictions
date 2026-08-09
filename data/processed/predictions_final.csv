@@ -1,5 +1,4 @@
 game_id,game_date,home_team,away_team,status,predicted_winner,win_probability,prediction_confidence,confident_pick
-822700,2026-08-09,Washington Nationals,Cincinnati Reds,Preview,Cincinnati Reds,0.3452237075004899,0.6547762924995101,False
 824724,2026-08-09,Boston Red Sox,Athletics,Preview,Boston Red Sox,0.5411727140750917,0.5411727140750917,False
 823345,2026-08-09,Pittsburgh Pirates,New York Mets,Preview,Pittsburgh Pirates,0.5560228142240426,0.5560228142240426,False
 823425,2026-08-09,Philadelphia Phillies,Toronto Blue Jays,Preview,Philadelphia Phillies,0.5302811286854501,0.5302811286854501,False
