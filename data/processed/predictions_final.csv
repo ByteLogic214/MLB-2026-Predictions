@@ -1,6 +1,6 @@
 game_id,game_date,home_team,away_team,status,predicted_winner,win_probability,prediction_confidence,confident_pick
 822780,2026-08-10,Toronto Blue Jays,Boston Red Sox,Preview,Boston Red Sox,0.46607029869621336,0.5339297013037867,False
-824887,2026-08-10,Atlanta Braves,New York Mets,Preview,Atlanta Braves,0.5473272898543621,0.5473272898543621,False
+824887,2026-08-10,Atlanta Braves,New York Mets,Preview,Atlanta Braves,0.547327289854362,0.547327289854362,False
 823675,2026-08-10,Minnesota Twins,Baltimore Orioles,Preview,Baltimore Orioles,0.4592186003960207,0.5407813996039793,False
 823018,2026-08-10,St. Louis Cardinals,Philadelphia Phillies,Preview,Philadelphia Phillies,0.43238572474089076,0.5676142752591092,False
 823998,2026-08-10,Los Angeles Angels,Texas Rangers,Preview,Los Angeles Angels,0.502589829301151,0.502589829301151,False
