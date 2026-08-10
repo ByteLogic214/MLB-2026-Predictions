@@ -1,2 +1,11 @@
 game_id,game_date,home_team,away_team,status,predicted_winner,win_probability,prediction_confidence,confident_pick
-823268,2026-08-09,San Diego Padres,Houston Astros,Preview,Houston Astros,0.3844438758549036,0.6155561241450964,False
+822780,2026-08-10,Toronto Blue Jays,Boston Red Sox,Preview,Boston Red Sox,0.46607029869621336,0.5339297013037867,False
+824887,2026-08-10,Atlanta Braves,New York Mets,Preview,Atlanta Braves,0.547327289854362,0.547327289854362,False
+823675,2026-08-10,Minnesota Twins,Baltimore Orioles,Preview,Baltimore Orioles,0.4592186003960207,0.5407813996039793,False
+823018,2026-08-10,St. Louis Cardinals,Philadelphia Phillies,Preview,Philadelphia Phillies,0.43238572474089076,0.5676142752591092,False
+823998,2026-08-10,Los Angeles Angels,Texas Rangers,Preview,Los Angeles Angels,0.502589829301151,0.502589829301151,False
+825048,2026-08-10,Arizona Diamondbacks,Colorado Rockies,Preview,Colorado Rockies,0.4326827930507686,0.5673172069492314,False
+824969,2026-08-10,Athletics,Tampa Bay Rays,Preview,Tampa Bay Rays,0.40966318960822884,0.5903368103917712,False
+823265,2026-08-10,San Diego Padres,Milwaukee Brewers,Preview,Milwaukee Brewers,0.38599962783282915,0.6140003721671708,False
+823189,2026-08-10,San Francisco Giants,Houston Astros,Preview,Houston Astros,0.3645077003296483,0.6354922996703517,False
+823918,2026-08-10,Los Angeles Dodgers,Kansas City Royals,Preview,Kansas City Royals,0.4555836435164975,0.5444163564835025,False
