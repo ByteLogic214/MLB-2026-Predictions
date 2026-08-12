@@ -1,7 +1,4 @@
 game_id,game_date,home_team,away_team,status,predicted_winner,win_probability,prediction_confidence,confident_pick
-825047,2026-08-12,Arizona Diamondbacks,Colorado Rockies,Preview,Colorado Rockies,0.4326827930507686,0.5673172069492314,False
-823187,2026-08-12,San Francisco Giants,Houston Astros,Preview,Houston Astros,0.3645077003296483,0.6354922996703517,False
-823263,2026-08-12,San Diego Padres,Milwaukee Brewers,Preview,Milwaukee Brewers,0.38599962783282915,0.6140003721671708,False
 824241,2026-08-12,Detroit Tigers,Cleveland Guardians,Preview,Detroit Tigers,0.5048706858507743,0.5048706858507743,False
 823833,2026-08-12,Miami Marlins,Pittsburgh Pirates,Preview,Miami Marlins,0.5089491074553251,0.5089491074553251,False
 822698,2026-08-12,Washington Nationals,Chicago Cubs,Preview,Chicago Cubs,0.33373315264618764,0.6662668473538124,False
