@@ -1,5 +1,4 @@
 game_id,game_date,home_team,away_team,status,predicted_winner,win_probability,prediction_confidence,confident_pick
-824967,2026-08-12,Athletics,Tampa Bay Rays,Preview,Tampa Bay Rays,0.40966318960822884,0.5903368103917712,False
 825047,2026-08-12,Arizona Diamondbacks,Colorado Rockies,Preview,Colorado Rockies,0.4326827930507686,0.5673172069492314,False
 823187,2026-08-12,San Francisco Giants,Houston Astros,Preview,Houston Astros,0.3645077003296483,0.6354922996703517,False
 823263,2026-08-12,San Diego Padres,Milwaukee Brewers,Preview,Milwaukee Brewers,0.38599962783282915,0.6140003721671708,False
