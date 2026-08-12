@@ -1,10 +1,7 @@
 game_id,game_date,home_team,away_team,status,predicted_winner,win_probability,prediction_confidence,confident_pick
-824241,2026-08-12,Detroit Tigers,Cleveland Guardians,Preview,Detroit Tigers,0.5048706858507743,0.5048706858507743,False
-823833,2026-08-12,Miami Marlins,Pittsburgh Pirates,Preview,Miami Marlins,0.5089491074553251,0.5089491074553251,False
-822698,2026-08-12,Washington Nationals,Chicago Cubs,Preview,Chicago Cubs,0.33373315264618764,0.6662668473538124,False
 823511,2026-08-12,New York Yankees,Seattle Mariners,Preview,Seattle Mariners,0.45741765706517423,0.5425823429348258,False
 822779,2026-08-12,Toronto Blue Jays,Boston Red Sox,Preview,Boston Red Sox,0.46607029869621336,0.5339297013037867,False
-824883,2026-08-12,Atlanta Braves,New York Mets,Preview,Atlanta Braves,0.547327289854362,0.547327289854362,False
+824883,2026-08-12,Atlanta Braves,New York Mets,Preview,Atlanta Braves,0.5473272898543621,0.5473272898543621,False
 824562,2026-08-12,Chicago White Sox,Cincinnati Reds,Preview,Cincinnati Reds,0.341635580519334,0.6583644194806659,False
 823916,2026-08-12,Los Angeles Dodgers,Kansas City Royals,Preview,Kansas City Royals,0.4555836435164975,0.5444163564835025,False
 823994,2026-08-12,Los Angeles Angels,Texas Rangers,Preview,Los Angeles Angels,0.502589829301151,0.502589829301151,False
