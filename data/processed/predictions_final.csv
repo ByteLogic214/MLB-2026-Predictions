@@ -1,4 +1,3 @@
 game_id,game_date,home_team,away_team,status,predicted_winner,win_probability,prediction_confidence,confident_pick
-823669,2026-08-13,Minnesota Twins,Philadelphia Phillies,Preview,Philadelphia Phillies,0.38158713143526934,0.6184128685647307,False
 823995,2026-08-13,Los Angeles Angels,Texas Rangers,Preview,Los Angeles Angels,0.502589829301151,0.502589829301151,False
 823915,2026-08-13,Los Angeles Dodgers,Milwaukee Brewers,Preview,Milwaukee Brewers,0.3538446413142395,0.6461553586857605,False
