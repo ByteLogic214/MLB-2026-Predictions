@@ -1,6 +1,5 @@
 game_id,game_date,home_team,away_team,status,predicted_winner,win_probability,prediction_confidence,confident_pick
 824238,2026-08-13,Detroit Tigers,Cleveland Guardians,Preview,Detroit Tigers,0.5048706858507743,0.5048706858507743,False
-824561,2026-08-13,Chicago White Sox,Cincinnati Reds,Preview,Cincinnati Reds,0.341635580519334,0.6583644194806659,False
 823829,2026-08-13,Miami Marlins,Pittsburgh Pirates,Preview,Miami Marlins,0.5089491074553251,0.5089491074553251,False
 823508,2026-08-13,New York Yankees,Seattle Mariners,Preview,Seattle Mariners,0.45741765706517423,0.5425823429348258,False
 822776,2026-08-13,Toronto Blue Jays,Boston Red Sox,Preview,Boston Red Sox,0.46607029869621336,0.5339297013037867,False
