@@ -1,3 +1,10 @@
 game_id,game_date,home_team,away_team,status,predicted_winner,win_probability,prediction_confidence,confident_pick
-823916,2026-08-12,Los Angeles Dodgers,Kansas City Royals,Preview,Kansas City Royals,0.4555836435164975,0.5444163564835025,False
-823994,2026-08-12,Los Angeles Angels,Texas Rangers,Preview,Los Angeles Angels,0.502589829301151,0.502589829301151,False
+824238,2026-08-13,Detroit Tigers,Cleveland Guardians,Preview,Detroit Tigers,0.5048706858507743,0.5048706858507743,False
+824561,2026-08-13,Chicago White Sox,Cincinnati Reds,Preview,Cincinnati Reds,0.341635580519334,0.6583644194806659,False
+823829,2026-08-13,Miami Marlins,Pittsburgh Pirates,Preview,Miami Marlins,0.5089491074553251,0.5089491074553251,False
+823508,2026-08-13,New York Yankees,Seattle Mariners,Preview,Seattle Mariners,0.45741765706517423,0.5425823429348258,False
+822776,2026-08-13,Toronto Blue Jays,Boston Red Sox,Preview,Boston Red Sox,0.46607029869621336,0.5339297013037867,False
+822696,2026-08-13,Washington Nationals,Chicago Cubs,Preview,Chicago Cubs,0.33373315264618764,0.6662668473538124,False
+823669,2026-08-13,Minnesota Twins,Philadelphia Phillies,Preview,Philadelphia Phillies,0.38158713143526934,0.6184128685647307,False
+823995,2026-08-13,Los Angeles Angels,Texas Rangers,Preview,Los Angeles Angels,0.502589829301151,0.502589829301151,False
+823915,2026-08-13,Los Angeles Dodgers,Milwaukee Brewers,Preview,Milwaukee Brewers,0.3538446413142395,0.6461553586857605,False
