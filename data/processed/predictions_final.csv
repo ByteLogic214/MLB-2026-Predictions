@@ -1,5 +1,4 @@
 game_id,game_date,home_team,away_team,status,predicted_winner,win_probability,prediction_confidence,confident_pick
-824643,2026-08-14,Chicago Cubs,St. Louis Cardinals,Preview,St. Louis Cardinals,0.45970270613900566,0.5402972938609943,False
 824479,2026-08-14,Cincinnati Reds,Miami Marlins,Preview,Miami Marlins,0.3565947386953698,0.6434052613046302,False
 823346,2026-08-14,Pittsburgh Pirates,Boston Red Sox,Preview,Pittsburgh Pirates,0.5457111587548431,0.5457111587548431,False
 824237,2026-08-14,Detroit Tigers,Chicago White Sox,Preview,Detroit Tigers,0.5316110820689524,0.5316110820689524,False
