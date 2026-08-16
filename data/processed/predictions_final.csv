@@ -1,2 +1,16 @@
 game_id,game_date,home_team,away_team,status,predicted_winner,win_probability,prediction_confidence,confident_pick
-824156,2026-08-16,Houston Astros,Seattle Mariners,Preview,Seattle Mariners,0.43777999634458475,0.5622200036554152,False
+822940,2026-08-16,Tampa Bay Rays,Baltimore Orioles,Final,Tampa Bay Rays,0.5397988510835483,0.5397988510835483,False
+823344,2026-08-16,Pittsburgh Pirates,Boston Red Sox,Final,Pittsburgh Pirates,0.5457111587548431,0.5457111587548431,False
+824880,2026-08-16,Atlanta Braves,Arizona Diamondbacks,Final,Arizona Diamondbacks,0.376494314327826,0.623505685672174,False
+822774,2026-08-16,Toronto Blue Jays,New York Yankees,Final,Toronto Blue Jays,0.5010521811302944,0.5010521811302944,False
+823590,2026-08-16,New York Mets,Washington Nationals,Final,Washington Nationals,0.44190324998467306,0.5580967500153269,False
+824397,2026-08-16,Cleveland Guardians,San Diego Padres,Live,San Diego Padres,0.4233871422711115,0.5766128577288885,False
+824236,2026-08-16,Detroit Tigers,Chicago White Sox,Final,Detroit Tigers,0.5316110820689524,0.5316110820689524,False
+824477,2026-08-16,Cincinnati Reds,Miami Marlins,Final,Miami Marlins,0.3565947386953698,0.6434052613046302,False
+823670,2026-08-16,Minnesota Twins,Philadelphia Phillies,Final,Philadelphia Phillies,0.38158713143526934,0.6184128685647307,False
+824642,2026-08-16,Chicago Cubs,St. Louis Cardinals,Final,St. Louis Cardinals,0.45970270613900566,0.5402972938609943,False
+823182,2026-08-16,San Francisco Giants,Colorado Rockies,Live,Colorado Rockies,0.42645486379804654,0.5735451362019535,False
+824965,2026-08-16,Athletics,Texas Rangers,Final,Texas Rangers,0.41902768705890914,0.5809723129410909,False
+823991,2026-08-16,Los Angeles Angels,Kansas City Royals,Final,Los Angeles Angels,0.5145194012424785,0.5145194012424785,False
+823912,2026-08-16,Los Angeles Dodgers,Milwaukee Brewers,Final,Milwaukee Brewers,0.3538446413142395,0.6461553586857605,False
+824156,2026-08-16,Houston Astros,Seattle Mariners,Live,Seattle Mariners,0.43777999634458475,0.5622200036554152,False
