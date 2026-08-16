@@ -1,6 +1,5 @@
 game_id,game_date,home_team,away_team,status,predicted_winner,win_probability,prediction_confidence,confident_pick
 824397,2026-08-16,Cleveland Guardians,San Diego Padres,Preview,San Diego Padres,0.4233871422711115,0.5766128577288885,False
-824642,2026-08-16,Chicago Cubs,St. Louis Cardinals,Preview,St. Louis Cardinals,0.45970270613900566,0.5402972938609943,False
 823182,2026-08-16,San Francisco Giants,Colorado Rockies,Preview,Colorado Rockies,0.42645486379804654,0.5735451362019535,False
 824965,2026-08-16,Athletics,Texas Rangers,Preview,Texas Rangers,0.41902768705890914,0.5809723129410909,False
 823991,2026-08-16,Los Angeles Angels,Kansas City Royals,Preview,Los Angeles Angels,0.5145194012424785,0.5145194012424785,False
