@@ -1,5 +1,4 @@
 game_id,game_date,home_team,away_team,status,predicted_winner,win_probability,prediction_confidence,confident_pick
-822940,2026-08-16,Tampa Bay Rays,Baltimore Orioles,Preview,Tampa Bay Rays,0.5397988510835483,0.5397988510835483,False
 823344,2026-08-16,Pittsburgh Pirates,Boston Red Sox,Preview,Pittsburgh Pirates,0.5457111587548431,0.5457111587548431,False
 824880,2026-08-16,Atlanta Braves,Arizona Diamondbacks,Preview,Arizona Diamondbacks,0.376494314327826,0.623505685672174,False
 822774,2026-08-16,Toronto Blue Jays,New York Yankees,Preview,Toronto Blue Jays,0.5010521811302944,0.5010521811302944,False
