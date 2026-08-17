@@ -1,5 +1,4 @@
 game_id,game_date,home_team,away_team,status,predicted_winner,win_probability,prediction_confidence,confident_pick
-824514,2026-08-17,Cincinnati Reds,St. Louis Cardinals,Preview,St. Louis Cardinals,0.45667144700705364,0.5433285529929464,False
 824478,2026-08-17,Cincinnati Reds,St. Louis Cardinals,Preview,St. Louis Cardinals,0.45667144700705364,0.5433285529929464,False
 822939,2026-08-17,Tampa Bay Rays,Baltimore Orioles,Preview,Tampa Bay Rays,0.5397988510835483,0.5397988510835483,False
 823427,2026-08-17,Philadelphia Phillies,Miami Marlins,Preview,Miami Marlins,0.45290981432702615,0.5470901856729738,False
