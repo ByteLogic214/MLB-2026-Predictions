@@ -1,15 +1,6 @@
 game_id,game_date,home_team,away_team,status,predicted_winner,win_probability,prediction_confidence,confident_pick
-824803,2026-08-18,Baltimore Orioles,New York Yankees,Preview,Baltimore Orioles,0.5314791532110389,0.5314791532110389,False
-823341,2026-08-18,Pittsburgh Pirates,Detroit Tigers,Preview,Pittsburgh Pirates,0.5563507345604928,0.5563507345604928,False
-824398,2026-08-18,Cleveland Guardians,San Francisco Giants,Preview,San Francisco Giants,0.40989237022909775,0.5901076297709023,False
-824475,2026-08-18,Cincinnati Reds,St. Louis Cardinals,Preview,St. Louis Cardinals,0.45667144700705364,0.5433285529929464,False
-822938,2026-08-18,Tampa Bay Rays,Toronto Blue Jays,Preview,Toronto Blue Jays,0.4954346162034551,0.5045653837965449,False
-823423,2026-08-18,Philadelphia Phillies,Miami Marlins,Preview,Miami Marlins,0.45290981432702615,0.5470901856729738,False
-824723,2026-08-18,Boston Red Sox,Arizona Diamondbacks,Preview,Arizona Diamondbacks,0.46658697269685656,0.5334130273031434,False
-823586,2026-08-18,New York Mets,San Diego Padres,Preview,New York Mets,0.5011852930913094,0.5011852930913094,False
 824075,2026-08-18,Kansas City Royals,Athletics,Preview,Athletics,0.43588251304226155,0.5641174869577384,False
 823667,2026-08-18,Minnesota Twins,Atlanta Braves,Preview,Atlanta Braves,0.37126010021297245,0.6287398997870275,False
-823749,2026-08-18,Milwaukee Brewers,Seattle Mariners,Preview,Seattle Mariners,0.49281838082677454,0.5071816191732255,False
 822859,2026-08-18,Texas Rangers,Washington Nationals,Preview,Washington Nationals,0.41486946868606916,0.5851305313139308,False
 824639,2026-08-18,Chicago Cubs,Chicago White Sox,Preview,Chicago White Sox,0.46150117138214564,0.5384988286178544,False
 824154,2026-08-18,Houston Astros,Los Angeles Angels,Preview,Los Angeles Angels,0.49548590276595833,0.5045140972340416,False
