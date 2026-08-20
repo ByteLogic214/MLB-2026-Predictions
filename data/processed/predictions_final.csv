@@ -1,4 +1,3 @@
 game_id,game_date,home_team,away_team,status,predicted_winner,win_probability,prediction_confidence,confident_pick
-824802,2026-08-20,Baltimore Orioles,New York Yankees,Preview,Baltimore Orioles,0.5314791532110389,0.5314791532110389,False
 822861,2026-08-20,Texas Rangers,Washington Nationals,Preview,Washington Nationals,0.41486946868606916,0.5851305313139308,False
 824153,2026-08-20,Houston Astros,Los Angeles Angels,Preview,Los Angeles Angels,0.49548590276595833,0.5045140972340416,False
