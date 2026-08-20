@@ -1,7 +1,4 @@
 game_id,game_date,home_team,away_team,status,predicted_winner,win_probability,prediction_confidence,confident_pick
-824074,2026-08-20,Kansas City Royals,Athletics,Preview,Athletics,0.43588251304226155,0.5641174869577384,False
-824589,2026-08-20,Chicago White Sox,Atlanta Braves,Preview,Atlanta Braves,0.36033309542764086,0.6396669045723591,False
-823747,2026-08-20,Milwaukee Brewers,Seattle Mariners,Preview,Seattle Mariners,0.49281838082677454,0.5071816191732255,False
 824802,2026-08-20,Baltimore Orioles,New York Yankees,Preview,Baltimore Orioles,0.5314791532110389,0.5314791532110389,False
 822861,2026-08-20,Texas Rangers,Washington Nationals,Preview,Washington Nationals,0.41486946868606916,0.5851305313139308,False
 824153,2026-08-20,Houston Astros,Los Angeles Angels,Preview,Los Angeles Angels,0.49548590276595833,0.5045140972340416,False
