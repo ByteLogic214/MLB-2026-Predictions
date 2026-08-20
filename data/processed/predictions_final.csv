@@ -1,5 +1,4 @@
 game_id,game_date,home_team,away_team,status,predicted_winner,win_probability,prediction_confidence,confident_pick
-824474,2026-08-20,Cincinnati Reds,St. Louis Cardinals,Preview,St. Louis Cardinals,0.45667144700705364,0.5433285529929464,False
 824395,2026-08-20,Cleveland Guardians,San Francisco Giants,Preview,San Francisco Giants,0.40989237022909775,0.5901076297709023,False
 822934,2026-08-20,Tampa Bay Rays,Toronto Blue Jays,Preview,Toronto Blue Jays,0.4954346162034551,0.5045653837965449,False
 824074,2026-08-20,Kansas City Royals,Athletics,Preview,Athletics,0.43588251304226155,0.5641174869577384,False
