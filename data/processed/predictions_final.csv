@@ -1,5 +1,4 @@
 game_id,game_date,home_team,away_team,status,predicted_winner,win_probability,prediction_confidence,confident_pick
-823746,2026-08-21,Milwaukee Brewers,Atlanta Braves,Preview,Milwaukee Brewers,0.5037986750809609,0.5037986750809609,False
 823420,2026-08-21,Philadelphia Phillies,St. Louis Cardinals,Preview,Philadelphia Phillies,0.5272997015397595,0.5272997015397595,False
 823510,2026-08-21,New York Yankees,Toronto Blue Jays,Preview,New York Yankees,0.5148828158811012,0.5148828158811012,False
 824721,2026-08-21,Boston Red Sox,San Francisco Giants,Preview,Boston Red Sox,0.5396480202536778,0.5396480202536778,False
