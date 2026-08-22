@@ -1,5 +1,4 @@
 game_id,game_date,home_team,away_team,status,predicted_winner,win_probability,prediction_confidence,confident_pick
-823743,2026-08-22,Milwaukee Brewers,Atlanta Braves,Preview,Milwaukee Brewers,0.5037986750809609,0.5037986750809609,False
 823831,2026-08-22,Miami Marlins,Washington Nationals,Preview,Washington Nationals,0.4420687113670345,0.5579312886329655,False
 823422,2026-08-22,Philadelphia Phillies,St. Louis Cardinals,Preview,Philadelphia Phillies,0.5272997015397595,0.5272997015397595,False
 824798,2026-08-22,Baltimore Orioles,Tampa Bay Rays,Preview,Baltimore Orioles,0.51932682366037,0.51932682366037,False
