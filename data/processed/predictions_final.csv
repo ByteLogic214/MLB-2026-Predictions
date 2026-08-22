@@ -1,12 +1,4 @@
 game_id,game_date,home_team,away_team,status,predicted_winner,win_probability,prediction_confidence,confident_pick
-824798,2026-08-22,Baltimore Orioles,Tampa Bay Rays,Preview,Baltimore Orioles,0.51932682366037,0.51932682366037,False
-822858,2026-08-22,Texas Rangers,Los Angeles Angels,Preview,Los Angeles Angels,0.4708850241822419,0.5291149758177581,False
-824151,2026-08-22,Houston Astros,Athletics,Preview,Houston Astros,0.5056933494133392,0.5056933494133392,False
-824560,2026-08-22,Chicago White Sox,New York Mets,Preview,New York Mets,0.493115323147297,0.506884676852703,False
-824073,2026-08-22,Kansas City Royals,Detroit Tigers,Preview,Detroit Tigers,0.42045144054510686,0.5795485594548931,False
-823910,2026-08-22,Los Angeles Dodgers,Pittsburgh Pirates,Preview,Los Angeles Dodgers,0.5317019417415302,0.5317019417415302,False
-823100,2026-08-22,Seattle Mariners,Chicago Cubs,Preview,Chicago Cubs,0.49755369865226545,0.5024463013477345,False
-824718,2026-08-22,Boston Red Sox,San Francisco Giants,Preview,Boston Red Sox,0.5396480202536778,0.5396480202536778,False
 825044,2026-08-22,Arizona Diamondbacks,Cincinnati Reds,Preview,Cincinnati Reds,0.4080593743821477,0.5919406256178523,False
 824316,2026-08-22,Colorado Rockies,Cleveland Guardians,Preview,Cleveland Guardians,0.3912492541898434,0.6087507458101566,False
 823261,2026-08-22,San Diego Padres,Minnesota Twins,Preview,Minnesota Twins,0.4619614970851166,0.5380385029148834,False
