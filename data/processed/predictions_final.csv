@@ -1,6 +1,2 @@
 game_id,game_date,home_team,away_team,status,predicted_winner,win_probability,prediction_confidence,confident_pick
-823909,2026-08-23,Los Angeles Dodgers,Pittsburgh Pirates,Preview,Los Angeles Dodgers,0.5317019417415302,0.5317019417415302,False
-823099,2026-08-23,Seattle Mariners,Chicago Cubs,Preview,Chicago Cubs,0.49755369865226545,0.5024463013477345,False
-823258,2026-08-23,San Diego Padres,Minnesota Twins,Preview,Minnesota Twins,0.4619614970851166,0.5380385029148834,False
-825043,2026-08-23,Arizona Diamondbacks,Cincinnati Reds,Preview,Cincinnati Reds,0.4080593743821477,0.5919406256178523,False
 823745,2026-08-23,Milwaukee Brewers,Atlanta Braves,Preview,Milwaukee Brewers,0.5037986750809609,0.5037986750809609,False
