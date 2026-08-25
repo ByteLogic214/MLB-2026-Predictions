@@ -1,11 +1,4 @@
 game_id,game_date,home_team,away_team,status,predicted_winner,win_probability,prediction_confidence,confident_pick
-824233,2026-08-25,Detroit Tigers,Tampa Bay Rays,Preview,Detroit Tigers,0.5382209973361904,0.5382209973361904,False
-822693,2026-08-25,Washington Nationals,Colorado Rockies,Preview,Colorado Rockies,0.35255834906635747,0.6474416509336425,False
-823505,2026-08-25,New York Yankees,Houston Astros,Preview,Houston Astros,0.4359519491115023,0.5640480508884977,False
-822773,2026-08-25,Toronto Blue Jays,Kansas City Royals,Preview,Kansas City Royals,0.4830203135899879,0.516979686410012,False
-823585,2026-08-25,New York Mets,Milwaukee Brewers,Preview,Milwaukee Brewers,0.3907188622238715,0.6092811377761285,False
-824881,2026-08-25,Atlanta Braves,Los Angeles Dodgers,Preview,Los Angeles Dodgers,0.44490612505519667,0.5550938749448033,False
-824556,2026-08-25,Chicago White Sox,Texas Rangers,Preview,Texas Rangers,0.3735028684390162,0.6264971315609837,False
 823016,2026-08-25,St. Louis Cardinals,Baltimore Orioles,Preview,St. Louis Cardinals,0.5107837727039075,0.5107837727039075,False
 823989,2026-08-25,Los Angeles Angels,Cleveland Guardians,Preview,Cleveland Guardians,0.4753242013146847,0.5246757986853152,False
 825042,2026-08-25,Arizona Diamondbacks,Chicago Cubs,Preview,Chicago Cubs,0.3916671538285447,0.6083328461714552,False
