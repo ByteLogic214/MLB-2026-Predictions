@@ -1,10 +1,8 @@
 game_id,game_date,home_team,away_team,status,predicted_winner,win_probability,prediction_confidence,confident_pick
-823825,2026-08-26,Miami Marlins,Boston Red Sox,Preview,Boston Red Sox,0.45028234323667204,0.549717656763328,False
-822692,2026-08-26,Washington Nationals,Colorado Rockies,Preview,Colorado Rockies,0.35255834906635747,0.6474416509336425,False
-823506,2026-08-26,New York Yankees,Houston Astros,Preview,Houston Astros,0.4359519491115023,0.5640480508884977,False
-822772,2026-08-26,Toronto Blue Jays,Kansas City Royals,Preview,Kansas City Royals,0.4830203135899879,0.516979686410012,False
-823584,2026-08-26,New York Mets,Milwaukee Brewers,Preview,Milwaukee Brewers,0.3907188622238715,0.6092811377761285,False
-824878,2026-08-26,Atlanta Braves,Los Angeles Dodgers,Preview,Los Angeles Dodgers,0.44490612505519667,0.5550938749448033,False
-824555,2026-08-26,Chicago White Sox,Texas Rangers,Preview,Texas Rangers,0.3735028684390162,0.6264971315609837,False
-823015,2026-08-26,St. Louis Cardinals,Baltimore Orioles,Preview,St. Louis Cardinals,0.5107837727039075,0.5107837727039075,False
-824963,2026-08-26,Athletics,Minnesota Twins,Preview,Minnesota Twins,0.4349100498447528,0.5650899501552472,False
+822694,2026-08-27,Washington Nationals,Colorado Rockies,Preview,Colorado Rockies,0.35255834906635747,0.6474416509336425,False
+823014,2026-08-27,St. Louis Cardinals,Baltimore Orioles,Preview,St. Louis Cardinals,0.5107837727039075,0.5107837727039075,False
+823503,2026-08-27,New York Yankees,Houston Astros,Preview,Houston Astros,0.4359519491115023,0.5640480508884977,False
+822771,2026-08-27,Toronto Blue Jays,Kansas City Royals,Preview,Kansas City Royals,0.4830203135899879,0.516979686410012,False
+823581,2026-08-27,New York Mets,Milwaukee Brewers,Preview,Milwaukee Brewers,0.3907188622238715,0.6092811377761285,False
+824879,2026-08-27,Atlanta Braves,Los Angeles Dodgers,Preview,Los Angeles Dodgers,0.44490612505519667,0.5550938749448033,False
+823179,2026-08-27,San Francisco Giants,Arizona Diamondbacks,Preview,Arizona Diamondbacks,0.36932593812740194,0.6306740618725981,False
