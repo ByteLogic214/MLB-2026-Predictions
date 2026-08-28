@@ -1,15 +1,4 @@
 game_id,game_date,home_team,away_team,status,predicted_winner,win_probability,prediction_confidence,confident_pick
-824638,2026-08-28,Chicago Cubs,Cincinnati Reds,Preview,Cincinnati Reds,0.42920760684752235,0.5707923931524777,False
-824231,2026-08-28,Detroit Tigers,Los Angeles Dodgers,Preview,Detroit Tigers,0.5406124307719912,0.5406124307719912,False
-822691,2026-08-28,Washington Nationals,Miami Marlins,Preview,Miami Marlins,0.3156593678601731,0.6843406321398269,False
-824396,2026-08-28,Cleveland Guardians,Kansas City Royals,Preview,Kansas City Royals,0.40048781859061644,0.5995121814093836,False
-823583,2026-08-28,New York Mets,Houston Astros,Preview,Houston Astros,0.3890269108975642,0.6109730891024359,False
-822935,2026-08-28,Tampa Bay Rays,San Diego Padres,Preview,Tampa Bay Rays,0.528039027706245,0.528039027706245,False
-822769,2026-08-28,Toronto Blue Jays,Seattle Mariners,Preview,Seattle Mariners,0.4297619704057917,0.5702380295942082,False
-824877,2026-08-28,Atlanta Braves,Colorado Rockies,Preview,Colorado Rockies,0.436071811173674,0.563928188826326,False
-823504,2026-08-28,New York Yankees,Boston Red Sox,Preview,Boston Red Sox,0.48881714807871246,0.5111828519212875,False
-823744,2026-08-28,Milwaukee Brewers,Texas Rangers,Preview,Milwaukee Brewers,0.519242719256501,0.519242719256501,False
-823666,2026-08-28,Minnesota Twins,Chicago White Sox,Preview,Chicago White Sox,0.40056971620895243,0.5994302837910476,False
 823013,2026-08-28,St. Louis Cardinals,Pittsburgh Pirates,Preview,St. Louis Cardinals,0.5353521883126946,0.5353521883126946,False
 823985,2026-08-28,Los Angeles Angels,Philadelphia Phillies,Preview,Philadelphia Phillies,0.4708451590265529,0.5291548409734471,False
 824960,2026-08-28,Athletics,Baltimore Orioles,Preview,Baltimore Orioles,0.4936950611021682,0.5063049388978318,False
