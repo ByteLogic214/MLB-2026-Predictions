@@ -1,6 +1,4 @@
 game_id,game_date,home_team,away_team,status,predicted_winner,win_probability,prediction_confidence,confident_pick
-823501,2026-08-29,New York Yankees,Boston Red Sox,Preview,Boston Red Sox,0.48881714807871246,0.5111828519212875,False
 823176,2026-08-29,San Francisco Giants,Arizona Diamondbacks,Preview,Arizona Diamondbacks,0.36932593812740194,0.6306740618725981,False
-823741,2026-08-29,Milwaukee Brewers,Texas Rangers,Preview,Milwaukee Brewers,0.519242719256501,0.519242719256501,False
 824961,2026-08-29,Athletics,Baltimore Orioles,Preview,Baltimore Orioles,0.4936950611021682,0.5063049388978318,False
 823986,2026-08-29,Los Angeles Angels,Philadelphia Phillies,Preview,Philadelphia Phillies,0.4708451590265529,0.5291548409734471,False
