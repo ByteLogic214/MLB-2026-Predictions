@@ -1,5 +1,13 @@
 game_id,game_date,home_team,away_team,status,predicted_winner,win_probability,prediction_confidence,confident_pick
-823013,2026-08-28,St. Louis Cardinals,Pittsburgh Pirates,Preview,St. Louis Cardinals,0.5353521883126946,0.5353521883126946,False
-823985,2026-08-28,Los Angeles Angels,Philadelphia Phillies,Preview,Philadelphia Phillies,0.4708451590265529,0.5291548409734471,False
-824960,2026-08-28,Athletics,Baltimore Orioles,Preview,Baltimore Orioles,0.4936950611021682,0.5063049388978318,False
-823178,2026-08-28,San Francisco Giants,Arizona Diamondbacks,Preview,Arizona Diamondbacks,0.36932593812740194,0.6306740618725981,False
+823501,2026-08-29,New York Yankees,Boston Red Sox,Preview,Boston Red Sox,0.48881714807871246,0.5111828519212875,False
+822770,2026-08-29,Toronto Blue Jays,Seattle Mariners,Preview,Seattle Mariners,0.4297619704057917,0.5702380295942082,False
+823177,2026-08-29,San Francisco Giants,Arizona Diamondbacks,Preview,Arizona Diamondbacks,0.36932593812740194,0.6306740618725981,False
+823176,2026-08-29,San Francisco Giants,Arizona Diamondbacks,Preview,Arizona Diamondbacks,0.36932593812740194,0.6306740618725981,False
+822690,2026-08-29,Washington Nationals,Miami Marlins,Preview,Miami Marlins,0.3156593678601731,0.6843406321398269,False
+824392,2026-08-29,Cleveland Guardians,Kansas City Royals,Preview,Kansas City Royals,0.40048781859061644,0.5995121814093836,False
+823582,2026-08-29,New York Mets,Houston Astros,Preview,Houston Astros,0.3890269108975642,0.6109730891024359,False
+822936,2026-08-29,Tampa Bay Rays,San Diego Padres,Preview,Tampa Bay Rays,0.528039027706245,0.528039027706245,False
+824874,2026-08-29,Atlanta Braves,Colorado Rockies,Preview,Colorado Rockies,0.436071811173674,0.563928188826326,False
+823741,2026-08-29,Milwaukee Brewers,Texas Rangers,Preview,Milwaukee Brewers,0.519242719256501,0.519242719256501,False
+824961,2026-08-29,Athletics,Baltimore Orioles,Preview,Baltimore Orioles,0.4936950611021682,0.5063049388978318,False
+823986,2026-08-29,Los Angeles Angels,Philadelphia Phillies,Preview,Philadelphia Phillies,0.4708451590265529,0.5291548409734471,False
