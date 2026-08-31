@@ -6,7 +6,7 @@ game_id,game_date,home_team,away_team,status,predicted_winner,win_probability,pr
 822689,2026-08-31,Washington Nationals,Miami Marlins,Preview,Miami Marlins,0.3156593678601731,0.6843406321398269,False
 823663,2026-08-31,Minnesota Twins,Detroit Tigers,Preview,Detroit Tigers,0.4194002118727159,0.5805997881272841,False
 824635,2026-08-31,Chicago Cubs,Milwaukee Brewers,Preview,Milwaukee Brewers,0.3799354378234292,0.6200645621765708,False
-822855,2026-08-31,Texas Rangers,Athletics,Preview,Athletics,0.47314320853980324,0.5268567914601967,False
+822855,2026-08-31,Texas Rangers,Athletics,Preview,Athletics,0.4731432085398032,0.5268567914601968,False
 824149,2026-08-31,Houston Astros,Chicago White Sox,Preview,Chicago White Sox,0.4775590060642999,0.5224409939357001,False
 824314,2026-08-31,Colorado Rockies,Baltimore Orioles,Preview,Baltimore Orioles,0.4643924753924165,0.5356075246075835,False
 823982,2026-08-31,Los Angeles Angels,New York Yankees,Preview,Los Angeles Angels,0.5184548374387926,0.5184548374387926,False
