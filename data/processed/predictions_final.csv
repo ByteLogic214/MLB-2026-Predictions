@@ -1,13 +1,16 @@
 game_id,game_date,home_team,away_team,status,predicted_winner,win_probability,prediction_confidence,confident_pick
-824911,2026-08-31,Atlanta Braves,San Francisco Giants,Preview,San Francisco Giants,0.4823048182977778,0.5176951817022222,False
-824473,2026-08-31,Cincinnati Reds,San Diego Padres,Preview,San Diego Padres,0.48770669945738465,0.5122933005426153,False
-822932,2026-08-31,Tampa Bay Rays,New York Mets,Preview,Tampa Bay Rays,0.5459388510544988,0.5459388510544988,False
-824719,2026-08-31,Boston Red Sox,Seattle Mariners,Preview,Seattle Mariners,0.4742796378395764,0.5257203621604236,False
-822689,2026-08-31,Washington Nationals,Miami Marlins,Preview,Miami Marlins,0.3156593678601731,0.6843406321398269,False
-823663,2026-08-31,Minnesota Twins,Detroit Tigers,Preview,Detroit Tigers,0.4194002118727159,0.5805997881272841,False
-824635,2026-08-31,Chicago Cubs,Milwaukee Brewers,Preview,Milwaukee Brewers,0.3799354378234292,0.6200645621765708,False
-822855,2026-08-31,Texas Rangers,Athletics,Preview,Athletics,0.4731432085398032,0.5268567914601968,False
-824149,2026-08-31,Houston Astros,Chicago White Sox,Preview,Chicago White Sox,0.4775590060642999,0.5224409939357001,False
-824314,2026-08-31,Colorado Rockies,Baltimore Orioles,Preview,Baltimore Orioles,0.4643924753924165,0.5356075246075835,False
-823982,2026-08-31,Los Angeles Angels,New York Yankees,Preview,Los Angeles Angels,0.5184548374387926,0.5184548374387926,False
-825040,2026-08-31,Arizona Diamondbacks,Philadelphia Phillies,Preview,Philadelphia Phillies,0.42613134368769623,0.5738686563123038,False
+824472,2026-09-01,Cincinnati Reds,San Diego Padres,Preview,San Diego Padres,0.48770669945738465,0.5122933005426153,False
+823340,2026-09-01,Pittsburgh Pirates,San Francisco Giants,Preview,Pittsburgh Pirates,0.5511941609982637,0.5511941609982637,False
+822929,2026-09-01,Tampa Bay Rays,New York Mets,Preview,Tampa Bay Rays,0.5459388510544988,0.5459388510544988,False
+824391,2026-09-01,Cleveland Guardians,Toronto Blue Jays,Preview,Toronto Blue Jays,0.39087084724378135,0.6091291527562186,False
+824716,2026-09-01,Boston Red Sox,Seattle Mariners,Preview,Seattle Mariners,0.4742796378395764,0.5257203621604236,False
+822687,2026-09-01,Washington Nationals,Atlanta Braves,Preview,Atlanta Braves,0.35216570942729525,0.6478342905727048,False
+823661,2026-09-01,Minnesota Twins,Detroit Tigers,Preview,Detroit Tigers,0.4194002118727159,0.5805997881272841,False
+824070,2026-09-01,Kansas City Royals,Miami Marlins,Preview,Miami Marlins,0.3234831666119354,0.6765168333880647,False
+824633,2026-09-01,Chicago Cubs,Milwaukee Brewers,Preview,Milwaukee Brewers,0.3799354378234292,0.6200645621765708,False
+822854,2026-09-01,Texas Rangers,Athletics,Preview,Athletics,0.47314320853980324,0.5268567914601967,False
+824148,2026-09-01,Houston Astros,Chicago White Sox,Preview,Chicago White Sox,0.4775590060642999,0.5224409939357001,False
+824313,2026-09-01,Colorado Rockies,Baltimore Orioles,Preview,Baltimore Orioles,0.4643924753924165,0.5356075246075835,False
+823984,2026-09-01,Los Angeles Angels,New York Yankees,Preview,Los Angeles Angels,0.5184548374387926,0.5184548374387926,False
+825038,2026-09-01,Arizona Diamondbacks,Philadelphia Phillies,Preview,Philadelphia Phillies,0.42613134368769623,0.5738686563123038,False
+823908,2026-09-01,Los Angeles Dodgers,St. Louis Cardinals,Preview,St. Louis Cardinals,0.43633474641243,0.56366525358757,False
