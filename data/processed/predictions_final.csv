@@ -1,7 +1,4 @@
 game_id,game_date,home_team,away_team,status,predicted_winner,win_probability,prediction_confidence,confident_pick
-824312,2026-09-02,Colorado Rockies,Baltimore Orioles,Preview,Baltimore Orioles,0.4643924753924165,0.5356075246075835,False
-825037,2026-09-02,Arizona Diamondbacks,Philadelphia Phillies,Preview,Philadelphia Phillies,0.42613134368769623,0.5738686563123038,False
-824717,2026-09-02,Boston Red Sox,Seattle Mariners,Preview,Seattle Mariners,0.4742796378395764,0.5257203621604236,False
 823339,2026-09-02,Pittsburgh Pirates,San Francisco Giants,Preview,Pittsburgh Pirates,0.5511941609982637,0.5511941609982637,False
 822931,2026-09-02,Tampa Bay Rays,New York Mets,Preview,Tampa Bay Rays,0.5459388510544988,0.5459388510544988,False
 824390,2026-09-02,Cleveland Guardians,Toronto Blue Jays,Preview,Toronto Blue Jays,0.39087084724378135,0.6091291527562186,False
