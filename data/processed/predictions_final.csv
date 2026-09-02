@@ -1,7 +1,13 @@
 game_id,game_date,home_team,away_team,status,predicted_winner,win_probability,prediction_confidence,confident_pick
-822854,2026-09-01,Texas Rangers,Athletics,Preview,Athletics,0.47314320853980324,0.5268567914601967,False
-824148,2026-09-01,Houston Astros,Chicago White Sox,Preview,Chicago White Sox,0.4775590060642999,0.5224409939357001,False
-824313,2026-09-01,Colorado Rockies,Baltimore Orioles,Preview,Baltimore Orioles,0.4643924753924165,0.5356075246075835,False
-823984,2026-09-01,Los Angeles Angels,New York Yankees,Preview,Los Angeles Angels,0.5184548374387926,0.5184548374387926,False
-825038,2026-09-01,Arizona Diamondbacks,Philadelphia Phillies,Preview,Philadelphia Phillies,0.42613134368769623,0.5738686563123038,False
-823908,2026-09-01,Los Angeles Dodgers,St. Louis Cardinals,Preview,St. Louis Cardinals,0.43633474641243,0.56366525358757,False
+824312,2026-09-02,Colorado Rockies,Baltimore Orioles,Preview,Baltimore Orioles,0.4643924753924165,0.5356075246075835,False
+825037,2026-09-02,Arizona Diamondbacks,Philadelphia Phillies,Preview,Philadelphia Phillies,0.42613134368769623,0.5738686563123038,False
+824717,2026-09-02,Boston Red Sox,Seattle Mariners,Preview,Seattle Mariners,0.4742796378395764,0.5257203621604236,False
+823339,2026-09-02,Pittsburgh Pirates,San Francisco Giants,Preview,Pittsburgh Pirates,0.5511941609982637,0.5511941609982637,False
+822931,2026-09-02,Tampa Bay Rays,New York Mets,Preview,Tampa Bay Rays,0.5459388510544988,0.5459388510544988,False
+824390,2026-09-02,Cleveland Guardians,Toronto Blue Jays,Preview,Toronto Blue Jays,0.39087084724378135,0.6091291527562186,False
+823660,2026-09-02,Minnesota Twins,Detroit Tigers,Preview,Detroit Tigers,0.4194002118727159,0.5805997881272841,False
+824068,2026-09-02,Kansas City Royals,Miami Marlins,Preview,Miami Marlins,0.3234831666119354,0.6765168333880647,False
+824634,2026-09-02,Chicago Cubs,Milwaukee Brewers,Preview,Milwaukee Brewers,0.3799354378234292,0.6200645621765708,False
+824147,2026-09-02,Houston Astros,Chicago White Sox,Preview,Chicago White Sox,0.4775590060642999,0.5224409939357001,False
+823983,2026-09-02,Los Angeles Angels,New York Yankees,Preview,Los Angeles Angels,0.5184548374387926,0.5184548374387926,False
+823906,2026-09-02,Los Angeles Dodgers,St. Louis Cardinals,Preview,St. Louis Cardinals,0.43633474641243,0.56366525358757,False
