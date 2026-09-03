@@ -1,7 +1,4 @@
 game_id,game_date,home_team,away_team,status,predicted_winner,win_probability,prediction_confidence,confident_pick
-824796,2026-09-03,Baltimore Orioles,Boston Red Sox,Preview,Baltimore Orioles,0.51081876579476,0.51081876579476,False
-824632,2026-09-03,Chicago Cubs,Milwaukee Brewers,Preview,Milwaukee Brewers,0.3799354378234292,0.6200645621765708,False
-824069,2026-09-03,Kansas City Royals,Miami Marlins,Preview,Miami Marlins,0.3234831666119354,0.6765168333880647,False
 822853,2026-09-03,Texas Rangers,Tampa Bay Rays,Preview,Tampa Bay Rays,0.4498443924266393,0.5501556075733607,False
 823095,2026-09-03,Seattle Mariners,Athletics,Preview,Seattle Mariners,0.5048711717144565,0.5048711717144565,False
 823907,2026-09-03,Los Angeles Dodgers,St. Louis Cardinals,Preview,St. Louis Cardinals,0.43633474641243,0.56366525358757,False
