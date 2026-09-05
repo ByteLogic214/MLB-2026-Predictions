@@ -1,12 +1,4 @@
 game_id,game_date,home_team,away_team,status,predicted_winner,win_probability,prediction_confidence,confident_pick
-823335,2026-09-05,Pittsburgh Pirates,Los Angeles Angels,Preview,Pittsburgh Pirates,0.5333968704371004,0.5333968704371004,False
-824468,2026-09-05,Cincinnati Reds,Milwaukee Brewers,Preview,Milwaukee Brewers,0.3748599995698608,0.6251400004301392,False
-824795,2026-09-05,Baltimore Orioles,Boston Red Sox,Preview,Baltimore Orioles,0.51081876579476,0.51081876579476,False
-822850,2026-09-05,Texas Rangers,Tampa Bay Rays,Preview,Tampa Bay Rays,0.4498443924266393,0.5501556075733607,False
-824066,2026-09-05,Kansas City Royals,Toronto Blue Jays,Preview,Toronto Blue Jays,0.41178199231987406,0.588218007680126,False
-824553,2026-09-05,Chicago White Sox,Minnesota Twins,Preview,Minnesota Twins,0.39150124333906505,0.608498756660935,False
-824145,2026-09-05,Houston Astros,Arizona Diamondbacks,Preview,Arizona Diamondbacks,0.42964987919733894,0.5703501208026611,False
-823257,2026-09-05,San Diego Padres,New York Yankees,Preview,San Diego Padres,0.5074031442777568,0.5074031442777568,False
 824310,2026-09-05,Colorado Rockies,St. Louis Cardinals,Preview,St. Louis Cardinals,0.3971416114938106,0.6028583885061893,False
 823904,2026-09-05,Los Angeles Dodgers,Washington Nationals,Preview,Washington Nationals,0.41544021683973087,0.5845597831602691,False
 823094,2026-09-05,Seattle Mariners,Athletics,Preview,Seattle Mariners,0.5048711717144565,0.5048711717144565,False
