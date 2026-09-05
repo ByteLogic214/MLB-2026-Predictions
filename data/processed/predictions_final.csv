@@ -1,6 +1,5 @@
 game_id,game_date,home_team,away_team,status,predicted_winner,win_probability,prediction_confidence,confident_pick
 823577,2026-09-05,New York Mets,San Francisco Giants,Preview,San Francisco Giants,0.4912498831886073,0.5087501168113927,False
-823823,2026-09-05,Miami Marlins,Chicago Cubs,Preview,Chicago Cubs,0.42804367666470355,0.5719563233352964,False
 823419,2026-09-05,Philadelphia Phillies,Atlanta Braves,Preview,Philadelphia Phillies,0.5070536651723043,0.5070536651723043,False
 824389,2026-09-05,Cleveland Guardians,Detroit Tigers,Preview,Detroit Tigers,0.39273589303909034,0.6072641069609097,False
 823335,2026-09-05,Pittsburgh Pirates,Los Angeles Angels,Preview,Pittsburgh Pirates,0.5333968704371004,0.5333968704371004,False
