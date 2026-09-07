@@ -1,2 +1,5 @@
 game_id,game_date,home_team,away_team,status,predicted_winner,win_probability,prediction_confidence,confident_pick
-823903,2026-09-06,Los Angeles Dodgers,Washington Nationals,Preview,Washington Nationals,0.41544021683973087,0.5845597831602691,False
+823254,2026-09-07,San Diego Padres,Washington Nationals,Preview,Washington Nationals,0.4392694076223096,0.5607305923776904,False
+823175,2026-09-07,San Francisco Giants,St. Louis Cardinals,Preview,St. Louis Cardinals,0.4402052618014414,0.5597947381985586,False
+823902,2026-09-07,Los Angeles Dodgers,Cincinnati Reds,Preview,Cincinnati Reds,0.4089661611992066,0.5910338388007934,False
+824958,2026-09-07,Athletics,Toronto Blue Jays,Preview,Toronto Blue Jays,0.43677005529404317,0.5632299447059568,False
