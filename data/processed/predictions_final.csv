@@ -1,9 +1,4 @@
 game_id,game_date,home_team,away_team,status,predicted_winner,win_probability,prediction_confidence,confident_pick
-824226,2026-09-09,Detroit Tigers,Minnesota Twins,Preview,Detroit Tigers,0.5371666981491636,0.5371666981491636,False
-824956,2026-09-09,Athletics,Toronto Blue Jays,Preview,Toronto Blue Jays,0.43677005529404317,0.5632299447059568,False
-823172,2026-09-09,San Francisco Giants,St. Louis Cardinals,Preview,St. Louis Cardinals,0.4402052618014414,0.5597947381985586,False
-823251,2026-09-09,San Diego Padres,Washington Nationals,Preview,Washington Nationals,0.4392694076223096,0.5607305923776904,False
-823090,2026-09-09,Seattle Mariners,Texas Rangers,Preview,Texas Rangers,0.4889349527325759,0.5110650472674241,False
 824791,2026-09-09,Baltimore Orioles,Cleveland Guardians,Preview,Cleveland Guardians,0.4920442362376745,0.5079557637623255,False
 823416,2026-09-09,Philadelphia Phillies,Houston Astros,Preview,Houston Astros,0.47106503739774885,0.5289349626022511,False
 823818,2026-09-09,Miami Marlins,New York Mets,Preview,Miami Marlins,0.5363533975575516,0.5363533975575516,False
