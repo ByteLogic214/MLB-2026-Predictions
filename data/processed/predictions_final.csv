@@ -1,4 +1,3 @@
 game_id,game_date,home_team,away_team,status,predicted_winner,win_probability,prediction_confidence,confident_pick
-823088,2026-09-10,Seattle Mariners,Texas Rangers,Preview,Texas Rangers,0.4889349527325759,0.5110650472674241,False
 823499,2026-09-10,New York Yankees,Colorado Rockies,Preview,Colorado Rockies,0.48824330450231407,0.511756695497686,False
 824550,2026-09-10,Chicago White Sox,Pittsburgh Pirates,Preview,Pittsburgh Pirates,0.47852991157620167,0.5214700884237984,False
