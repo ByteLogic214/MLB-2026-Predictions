@@ -1,5 +1,4 @@
 game_id,game_date,home_team,away_team,status,predicted_winner,win_probability,prediction_confidence,confident_pick
-824631,2026-09-11,Chicago Cubs,Pittsburgh Pirates,Preview,Chicago Cubs,0.533553442919764,0.533553442919764,False
 824227,2026-09-11,Detroit Tigers,Colorado Rockies,Preview,Detroit Tigers,0.5334720434809288,0.5334720434809288,False
 822684,2026-09-11,Washington Nationals,Los Angeles Angels,Preview,Los Angeles Angels,0.4017252655182048,0.5982747344817951,False
 823498,2026-09-11,New York Yankees,New York Mets,Preview,New York Yankees,0.5558885180103202,0.5558885180103202,False
