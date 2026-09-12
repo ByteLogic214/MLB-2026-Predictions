@@ -1,5 +1,14 @@
 game_id,game_date,home_team,away_team,status,predicted_winner,win_probability,prediction_confidence,confident_pick
-823012,2026-09-11,St. Louis Cardinals,Chicago White Sox,Preview,Chicago White Sox,0.45629875054412905,0.543701249455871,False
-824954,2026-09-11,Athletics,Seattle Mariners,Preview,Seattle Mariners,0.3574783535546312,0.6425216464453688,False
-825036,2026-09-11,Arizona Diamondbacks,Texas Rangers,Preview,Texas Rangers,0.4412727257240895,0.5587272742759105,False
-823173,2026-09-11,San Francisco Giants,San Diego Padres,Preview,San Diego Padres,0.4828923740415261,0.5171076259584739,False
+824630,2026-09-12,Chicago Cubs,Pittsburgh Pirates,Preview,Chicago Cubs,0.533553442919764,0.533553442919764,False
+822768,2026-09-12,Toronto Blue Jays,Baltimore Orioles,Preview,Toronto Blue Jays,0.5118678892775518,0.5118678892775518,False
+822685,2026-09-12,Washington Nationals,Los Angeles Angels,Preview,Los Angeles Angels,0.4017252655182048,0.5982747344817951,False
+823170,2026-09-12,San Francisco Giants,San Diego Padres,Preview,San Diego Padres,0.4828923740415261,0.5171076259584739,False
+824712,2026-09-12,Boston Red Sox,Kansas City Royals,Preview,Boston Red Sox,0.5308166523667155,0.5308166523667155,False
+823657,2026-09-12,Minnesota Twins,Cleveland Guardians,Preview,Cleveland Guardians,0.39009271579921656,0.6099072842007834,False
+823819,2026-09-12,Miami Marlins,Los Angeles Dodgers,Preview,Los Angeles Dodgers,0.44957208278161176,0.5504279172183882,False
+822927,2026-09-12,Tampa Bay Rays,Houston Astros,Preview,Houston Astros,0.4085914794984763,0.5914085205015237,False
+823737,2026-09-12,Milwaukee Brewers,Cincinnati Reds,Preview,Milwaukee Brewers,0.5073089813797597,0.5073089813797597,False
+824870,2026-09-12,Atlanta Braves,Philadelphia Phillies,Preview,Philadelphia Phillies,0.4377092386361995,0.5622907613638005,False
+823009,2026-09-12,St. Louis Cardinals,Chicago White Sox,Preview,Chicago White Sox,0.45629875054412905,0.543701249455871,False
+825035,2026-09-12,Arizona Diamondbacks,Texas Rangers,Preview,Texas Rangers,0.4412727257240895,0.5587272742759105,False
+824955,2026-09-12,Athletics,Seattle Mariners,Preview,Seattle Mariners,0.3574783535546312,0.6425216464453688,False
