@@ -1,6 +1,4 @@
 game_id,game_date,home_team,away_team,status,predicted_winner,win_probability,prediction_confidence,confident_pick
-824712,2026-09-12,Boston Red Sox,Kansas City Royals,Preview,Boston Red Sox,0.5308166523667155,0.5308166523667155,False
-822927,2026-09-12,Tampa Bay Rays,Houston Astros,Preview,Houston Astros,0.4085914794984763,0.5914085205015237,False
 823737,2026-09-12,Milwaukee Brewers,Cincinnati Reds,Preview,Milwaukee Brewers,0.5073089813797597,0.5073089813797597,False
 824870,2026-09-12,Atlanta Braves,Philadelphia Phillies,Preview,Philadelphia Phillies,0.4377092386361995,0.5622907613638005,False
 823009,2026-09-12,St. Louis Cardinals,Chicago White Sox,Preview,Chicago White Sox,0.45629875054412905,0.543701249455871,False
