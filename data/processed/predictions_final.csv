@@ -1,3 +1,7 @@
 game_id,game_date,home_team,away_team,status,predicted_winner,win_probability,prediction_confidence,confident_pick
-825035,2026-09-12,Arizona Diamondbacks,Texas Rangers,Preview,Texas Rangers,0.4412727257240895,0.5587272742759105,False
-824955,2026-09-12,Athletics,Seattle Mariners,Preview,Seattle Mariners,0.3574783535546312,0.6425216464453688,False
+823008,2026-09-13,St. Louis Cardinals,Chicago White Sox,Preview,Chicago White Sox,0.45629875054412905,0.543701249455871,False
+824628,2026-09-13,Chicago Cubs,Pittsburgh Pirates,Preview,Chicago Cubs,0.533553442919764,0.533553442919764,False
+824708,2026-09-13,Boston Red Sox,Kansas City Royals,Preview,Boston Red Sox,0.5308166523667155,0.5308166523667155,False
+824952,2026-09-13,Athletics,Seattle Mariners,Preview,Seattle Mariners,0.3574783535546312,0.6425216464453688,False
+825033,2026-09-13,Arizona Diamondbacks,Texas Rangers,Preview,Texas Rangers,0.4412727257240895,0.5587272742759105,False
+823171,2026-09-13,San Francisco Giants,San Diego Padres,Preview,San Diego Padres,0.4828923740415261,0.5171076259584739,False
