@@ -1,12 +1,4 @@
 game_id,game_date,home_team,away_team,status,predicted_winner,win_probability,prediction_confidence,confident_pick
-824467,2026-09-16,Cincinnati Reds,Los Angeles Dodgers,Preview,Los Angeles Dodgers,0.4525947939851602,0.5474052060148398,False
-822926,2026-09-16,Tampa Bay Rays,Athletics,Preview,Tampa Bay Rays,0.5132919779863467,0.5132919779863467,False
-823332,2026-09-16,Pittsburgh Pirates,Milwaukee Brewers,Preview,Pittsburgh Pirates,0.5334860917041737,0.5334860917041737,False
-822680,2026-09-16,Washington Nationals,Philadelphia Phillies,Preview,Philadelphia Phillies,0.3698165485788316,0.6301834514211684,False
-823576,2026-09-16,New York Mets,Baltimore Orioles,Preview,New York Mets,0.518737518108688,0.518737518108688,False
-824626,2026-09-16,Chicago Cubs,Atlanta Braves,Preview,Atlanta Braves,0.43359802920322876,0.5664019707967712,False
-822846,2026-09-16,Texas Rangers,Boston Red Sox,Preview,Boston Red Sox,0.43097334957254585,0.5690266504274542,False
-824140,2026-09-16,Houston Astros,Kansas City Royals,Preview,Kansas City Royals,0.48857204558286804,0.511427954417132,False
 824306,2026-09-16,Colorado Rockies,San Diego Padres,Preview,San Diego Padres,0.43870741269320357,0.5612925873067964,False
 823979,2026-09-16,Los Angeles Angels,Seattle Mariners,Preview,Seattle Mariners,0.45396010762962524,0.5460398923703748,False
 825031,2026-09-16,Arizona Diamondbacks,Miami Marlins,Preview,Miami Marlins,0.34027052194731394,0.6597294780526861,False
