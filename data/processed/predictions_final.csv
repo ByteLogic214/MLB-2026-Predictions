@@ -1,4 +1,6 @@
 game_id,game_date,home_team,away_team,status,predicted_winner,win_probability,prediction_confidence,confident_pick
-824306,2026-09-16,Colorado Rockies,San Diego Padres,Preview,San Diego Padres,0.43870741269320357,0.5612925873067964,False
-823979,2026-09-16,Los Angeles Angels,Seattle Mariners,Preview,Seattle Mariners,0.45396010762962524,0.5460398923703748,False
-825031,2026-09-16,Arizona Diamondbacks,Miami Marlins,Preview,Miami Marlins,0.34027052194731394,0.6597294780526861,False
+824141,2026-09-17,Houston Astros,Kansas City Royals,Preview,Kansas City Royals,0.48857204558286804,0.511427954417132,False
+823573,2026-09-17,New York Mets,Philadelphia Phillies,Preview,Philadelphia Phillies,0.4465432472496321,0.5534567527503679,False
+824548,2026-09-17,Chicago White Sox,Detroit Tigers,Preview,Detroit Tigers,0.39229831990947484,0.6077016800905252,False
+822845,2026-09-17,Texas Rangers,Boston Red Sox,Preview,Boston Red Sox,0.43097334957254585,0.5690266504274542,False
+823978,2026-09-17,Los Angeles Angels,Minnesota Twins,Preview,Los Angeles Angels,0.5060694918750798,0.5060694918750798,False
