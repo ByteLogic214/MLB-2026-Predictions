@@ -1,7 +1,4 @@
 game_id,game_date,home_team,away_team,status,predicted_winner,win_probability,prediction_confidence,confident_pick
-822921,2026-09-19,Tampa Bay Rays,Boston Red Sox,Preview,Boston Red Sox,0.4733132190201329,0.5266867809798671,False
-823571,2026-09-19,New York Mets,Philadelphia Phillies,Preview,Philadelphia Phillies,0.4465432472496321,0.5534567527503679,False
-824380,2026-09-19,Cleveland Guardians,Athletics,Preview,Athletics,0.409278123289117,0.590721876710883,False
 824461,2026-09-19,Cincinnati Reds,Chicago Cubs,Preview,Chicago Cubs,0.41533150931348356,0.5846684906865165,False
 823330,2026-09-19,Pittsburgh Pirates,Kansas City Royals,Preview,Pittsburgh Pirates,0.5465727173957327,0.5465727173957327,False
 822843,2026-09-19,Texas Rangers,Toronto Blue Jays,Preview,Toronto Blue Jays,0.46021910497684615,0.5397808950231539,False
