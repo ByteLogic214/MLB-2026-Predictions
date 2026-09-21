@@ -1,4 +1,3 @@
 game_id,game_date,home_team,away_team,status,predicted_winner,win_probability,prediction_confidence,confident_pick
 824787,2026-09-21,Baltimore Orioles,Toronto Blue Jays,Preview,Baltimore Orioles,0.5313917739511045,0.5313917739511045,False
-824221,2026-09-21,Detroit Tigers,Washington Nationals,Preview,Detroit Tigers,0.5214639299469737,0.5214639299469737,False
 823169,2026-09-21,San Francisco Giants,Minnesota Twins,Preview,Minnesota Twins,0.4516679571460861,0.5483320428539139,False
