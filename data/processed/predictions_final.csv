@@ -1,13 +1,4 @@
 game_id,game_date,home_team,away_team,status,predicted_winner,win_probability,prediction_confidence,confident_pick
-823494,2026-09-22,New York Yankees,Tampa Bay Rays,Preview,New York Yankees,0.5012032142719509,0.5012032142719509,False
-824222,2026-09-22,Detroit Tigers,Washington Nationals,Preview,Detroit Tigers,0.5214639299469737,0.5214639299469737,False
-823328,2026-09-22,Pittsburgh Pirates,St. Louis Cardinals,Preview,Pittsburgh Pirates,0.5483837124882652,0.5483837124882652,False
-823412,2026-09-22,Philadelphia Phillies,Milwaukee Brewers,Preview,Milwaukee Brewers,0.47225469469965975,0.5277453053003403,False
-824709,2026-09-22,Boston Red Sox,Cleveland Guardians,Preview,Boston Red Sox,0.5019978862216294,0.5019978862216294,False
-824867,2026-09-22,Atlanta Braves,Cincinnati Reds,Preview,Cincinnati Reds,0.40683600579121654,0.5931639942087834,False
-824061,2026-09-22,Kansas City Royals,Chicago White Sox,Preview,Chicago White Sox,0.4115968646398902,0.5884031353601098,False
-824624,2026-09-22,Chicago Cubs,Miami Marlins,Preview,Miami Marlins,0.36290041895286895,0.637099581047131,False
-822840,2026-09-22,Texas Rangers,New York Mets,Preview,Texas Rangers,0.5453761172686189,0.5453761172686189,False
 824302,2026-09-22,Colorado Rockies,Arizona Diamondbacks,Preview,Arizona Diamondbacks,0.33109878738153065,0.6689012126184694,False
 824953,2026-09-22,Athletics,Los Angeles Angels,Preview,Los Angeles Angels,0.44537509706026734,0.5546249029397327,False
 823089,2026-09-22,Seattle Mariners,Houston Astros,Preview,Houston Astros,0.4875117067775825,0.5124882932224175,False
