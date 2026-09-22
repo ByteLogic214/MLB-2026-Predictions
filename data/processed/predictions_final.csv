@@ -1,7 +1,5 @@
 game_id,game_date,home_team,away_team,status,predicted_winner,win_probability,prediction_confidence,confident_pick
-823543,2026-09-22,New York Yankees,Tampa Bay Rays,Preview,New York Yankees,0.5012032142719509,0.5012032142719509,False
 823494,2026-09-22,New York Yankees,Tampa Bay Rays,Preview,New York Yankees,0.5012032142719509,0.5012032142719509,False
-824785,2026-09-22,Baltimore Orioles,Toronto Blue Jays,Preview,Baltimore Orioles,0.5313917739511045,0.5313917739511045,False
 824222,2026-09-22,Detroit Tigers,Washington Nationals,Preview,Detroit Tigers,0.5214639299469737,0.5214639299469737,False
 823328,2026-09-22,Pittsburgh Pirates,St. Louis Cardinals,Preview,Pittsburgh Pirates,0.5483837124882652,0.5483837124882652,False
 823412,2026-09-22,Philadelphia Phillies,Milwaukee Brewers,Preview,Milwaukee Brewers,0.47225469469965975,0.5277453053003403,False
