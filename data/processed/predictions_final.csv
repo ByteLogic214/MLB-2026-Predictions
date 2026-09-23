@@ -1,6 +1,5 @@
 game_id,game_date,home_team,away_team,status,predicted_winner,win_probability,prediction_confidence,confident_pick
 824784,2026-09-23,Baltimore Orioles,Toronto Blue Jays,Preview,Baltimore Orioles,0.5313917739511045,0.5313917739511045,False
-823168,2026-09-23,San Francisco Giants,Minnesota Twins,Preview,Minnesota Twins,0.4516679571460861,0.5483320428539139,False
 823327,2026-09-23,Pittsburgh Pirates,St. Louis Cardinals,Preview,Pittsburgh Pirates,0.5483837124882652,0.5483837124882652,False
 823410,2026-09-23,Philadelphia Phillies,Milwaukee Brewers,Preview,Milwaukee Brewers,0.47225469469965975,0.5277453053003403,False
 823492,2026-09-23,New York Yankees,Tampa Bay Rays,Preview,New York Yankees,0.5012032142719509,0.5012032142719509,False
