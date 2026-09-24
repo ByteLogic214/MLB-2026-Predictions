@@ -1,9 +1,4 @@
 game_id,game_date,home_team,away_team,status,predicted_winner,win_probability,prediction_confidence,confident_pick
-823326,2026-09-24,Pittsburgh Pirates,St. Louis Cardinals,Preview,Pittsburgh Pirates,0.5483837124882652,0.5483837124882652,False
-824059,2026-09-24,Kansas City Royals,Chicago White Sox,Preview,Chicago White Sox,0.4115968646398902,0.5884031353601098,False
-824623,2026-09-24,Chicago Cubs,Miami Marlins,Preview,Miami Marlins,0.36290041895286895,0.637099581047131,False
-822842,2026-09-24,Texas Rangers,New York Mets,Preview,Texas Rangers,0.5453761172686189,0.5453761172686189,False
-824298,2026-09-24,Colorado Rockies,Arizona Diamondbacks,Preview,Arizona Diamondbacks,0.33109878738153065,0.6689012126184694,False
 823411,2026-09-24,Philadelphia Phillies,Milwaukee Brewers,Preview,Milwaukee Brewers,0.47225469469965975,0.5277453053003403,False
 824707,2026-09-24,Boston Red Sox,Cleveland Guardians,Preview,Boston Red Sox,0.5019978862216294,0.5019978862216294,False
 823493,2026-09-24,New York Yankees,Tampa Bay Rays,Preview,New York Yankees,0.5012032142719509,0.5012032142719509,False
