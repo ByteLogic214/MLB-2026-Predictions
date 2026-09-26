@@ -1,10 +1,14 @@
 game_id,game_date,home_team,away_team,status,predicted_winner,win_probability,prediction_confidence,confident_pick
-823489,2026-09-25,New York Yankees,Baltimore Orioles,Preview,New York Yankees,0.5436797240782594,0.5436797240782594,False
-824058,2026-09-25,Kansas City Royals,Cleveland Guardians,Preview,Cleveland Guardians,0.4041246177470345,0.5958753822529654,False
-824544,2026-09-25,Chicago White Sox,Colorado Rockies,Preview,Colorado Rockies,0.36280558878634095,0.637194411213659,False
-823735,2026-09-25,Milwaukee Brewers,St. Louis Cardinals,Preview,Milwaukee Brewers,0.5293726807866284,0.5293726807866284,False
-823652,2026-09-25,Minnesota Twins,Texas Rangers,Preview,Texas Rangers,0.3937867129632124,0.6062132870367876,False
-824947,2026-09-25,Athletics,Houston Astros,Preview,Houston Astros,0.3555111598146534,0.6444888401853466,False
-823248,2026-09-25,San Diego Padres,Arizona Diamondbacks,Preview,Arizona Diamondbacks,0.3934717070191881,0.6065282929808119,False
-823085,2026-09-25,Seattle Mariners,Los Angeles Angels,Preview,Los Angeles Angels,0.4789161206156943,0.5210838793843058,False
-823167,2026-09-25,San Francisco Giants,Los Angeles Dodgers,Preview,Los Angeles Dodgers,0.4306407484361557,0.5693592515638444,False
+822678,2026-09-26,Washington Nationals,New York Mets,Preview,New York Mets,0.49627187903220393,0.5037281209677961,False
+824219,2026-09-26,Detroit Tigers,Pittsburgh Pirates,Preview,Detroit Tigers,0.5510534702158569,0.5510534702158569,False
+822759,2026-09-26,Toronto Blue Jays,Cincinnati Reds,Preview,Cincinnati Reds,0.4551268323154818,0.5448731676845182,False
+823165,2026-09-26,San Francisco Giants,Los Angeles Dodgers,Preview,Los Angeles Dodgers,0.4306407484361557,0.5693592515638444,False
+823653,2026-09-26,Minnesota Twins,Texas Rangers,Preview,Texas Rangers,0.3937867129632124,0.6062132870367876,False
+823813,2026-09-26,Miami Marlins,Atlanta Braves,Preview,Atlanta Braves,0.43537805691214626,0.5646219430878537,False
+824057,2026-09-26,Kansas City Royals,Cleveland Guardians,Preview,Cleveland Guardians,0.4041246177470345,0.5958753822529654,False
+824543,2026-09-26,Chicago White Sox,Colorado Rockies,Preview,Colorado Rockies,0.36280558878634095,0.637194411213659,False
+823733,2026-09-26,Milwaukee Brewers,St. Louis Cardinals,Preview,Milwaukee Brewers,0.5293726807866284,0.5293726807866284,False
+823407,2026-09-26,Philadelphia Phillies,Tampa Bay Rays,Preview,Philadelphia Phillies,0.5244847907235146,0.5244847907235146,False
+823245,2026-09-26,San Diego Padres,Arizona Diamondbacks,Preview,Arizona Diamondbacks,0.3934717070191881,0.6065282929808119,False
+824949,2026-09-26,Athletics,Houston Astros,Preview,Houston Astros,0.3555111598146534,0.6444888401853466,False
+823083,2026-09-26,Seattle Mariners,Los Angeles Angels,Preview,Los Angeles Angels,0.4789161206156943,0.5210838793843058,False
