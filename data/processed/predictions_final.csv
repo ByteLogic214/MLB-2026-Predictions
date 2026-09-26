@@ -1,6 +1,4 @@
 game_id,game_date,home_team,away_team,status,predicted_winner,win_probability,prediction_confidence,confident_pick
-822678,2026-09-26,Washington Nationals,New York Mets,Preview,New York Mets,0.49627187903220393,0.5037281209677961,False
-824219,2026-09-26,Detroit Tigers,Pittsburgh Pirates,Preview,Detroit Tigers,0.5510534702158569,0.5510534702158569,False
 822759,2026-09-26,Toronto Blue Jays,Cincinnati Reds,Preview,Cincinnati Reds,0.4551268323154818,0.5448731676845182,False
 823165,2026-09-26,San Francisco Giants,Los Angeles Dodgers,Preview,Los Angeles Dodgers,0.4306407484361557,0.5693592515638444,False
 823653,2026-09-26,Minnesota Twins,Texas Rangers,Preview,Texas Rangers,0.3937867129632124,0.6062132870367876,False
