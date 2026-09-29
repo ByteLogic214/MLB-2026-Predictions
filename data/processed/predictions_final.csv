@@ -1,5 +1,4 @@
 game_id,game_date,home_team,away_team,status,predicted_winner,win_probability,prediction_confidence,confident_pick
-849845,2026-09-29,Atlanta Braves,Philadelphia Phillies,Preview,Philadelphia Phillies,0.4377092386361995,0.5622907613638005,False
 849849,2026-09-29,Houston Astros,Chicago White Sox,Preview,Chicago White Sox,0.4775590060642999,0.5224409939357001,False
 849851,2026-09-29,New York Yankees,Boston Red Sox,Preview,Boston Red Sox,0.48881714807871246,0.5111828519212875,False
 849843,2026-09-29,San Diego Padres,Chicago Cubs,Preview,Chicago Cubs,0.4224921061470943,0.5775078938529057,False
