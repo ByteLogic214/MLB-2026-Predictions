@@ -1,3 +1,4 @@
 game_id,game_date,home_team,away_team,status,predicted_winner,win_probability,prediction_confidence,confident_pick
-849851,2026-09-29,New York Yankees,Boston Red Sox,Preview,Boston Red Sox,0.48881714807871246,0.5111828519212875,False
-849843,2026-09-29,San Diego Padres,Chicago Cubs,Preview,Chicago Cubs,0.4224921061470943,0.5775078938529057,False
+849846,2026-09-30,Houston Astros,Chicago White Sox,Preview,Chicago White Sox,0.4775590060642999,0.5224409939357001,False
+849848,2026-09-30,New York Yankees,Boston Red Sox,Preview,Boston Red Sox,0.48881714807871246,0.5111828519212875,False
+849842,2026-09-30,San Diego Padres,Chicago Cubs,Preview,Chicago Cubs,0.4224921061470943,0.5775078938529057,False
