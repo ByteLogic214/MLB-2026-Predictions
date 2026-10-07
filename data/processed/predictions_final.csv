@@ -1,2 +1,4 @@
 game_id,game_date,home_team,away_team,status,predicted_winner,win_probability,prediction_confidence,confident_pick
-849826,2026-10-06,San Diego Padres,Milwaukee Brewers,Preview,Milwaukee Brewers,0.38599962783282915,0.6140003721671708,False
+849822,2026-10-07,Atlanta Braves,Los Angeles Dodgers,Preview,Los Angeles Dodgers,0.4449061250551966,0.5550938749448033,False
+849838,2026-10-07,New York Yankees,Tampa Bay Rays,Preview,New York Yankees,0.5012032142719509,0.5012032142719509,False
+849827,2026-10-07,San Diego Padres,Milwaukee Brewers,Preview,Milwaukee Brewers,0.38599962783282915,0.6140003721671708,False
