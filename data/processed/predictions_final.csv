@@ -1,3 +1,2 @@
 game_id,game_date,home_team,away_team,status,predicted_winner,win_probability,prediction_confidence,confident_pick
 849832,2026-10-08,Chicago White Sox,Cleveland Guardians,Preview,Cleveland Guardians,0.3793127438845819,0.6206872561154181,False
-849837,2026-10-08,New York Yankees,Tampa Bay Rays,Preview,New York Yankees,0.5012032142719509,0.5012032142719509,False
