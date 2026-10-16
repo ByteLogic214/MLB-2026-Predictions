@@ -1,3 +1,2 @@
 game_id,game_date,home_team,away_team,status,predicted_winner,win_probability,prediction_confidence,confident_pick
-849818,2026-10-15,Cleveland Guardians,Tampa Bay Rays,Final,Tampa Bay Rays,0.37789928967920533,0.6221007103207947,False
-849810,2026-10-15,Los Angeles Dodgers,Milwaukee Brewers,Live,Milwaukee Brewers,0.3538446413142395,0.6461553586857605,False
+849817,2026-10-16,Cleveland Guardians,Tampa Bay Rays,Preview,Tampa Bay Rays,0.37789928967920533,0.6221007103207947,False
