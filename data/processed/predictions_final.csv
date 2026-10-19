@@ -1,2 +1,2 @@
 game_id,game_date,home_team,away_team,status,predicted_winner,win_probability,prediction_confidence,confident_pick
-849817,2026-10-18,Cleveland Guardians,Tampa Bay Rays,Live,Tampa Bay Rays,0.37789928967920533,0.6221007103207947,False
+849815,2026-10-19,Tampa Bay Rays,Cleveland Guardians,Preview,Cleveland Guardians,0.46832139943358253,0.5316786005664175,False
